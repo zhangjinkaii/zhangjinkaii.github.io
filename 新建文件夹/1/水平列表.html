@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	ul,a{
+		
+		background:#62ab00;
+		height: 60px;
+		overflow: hidden;
+		animation: sun 10s linear infinite;
+	}
+
+li{
+    
+     height: 60px;
+	list-style: none;
+	line-height: 60px;
+	/*font-size:18px;*/
+	color:#fff;
+	float: left;
+	text-align: center;
+	margin-left: 24px;
+    
+
+}
+a{
+	color:#fff;
+	text-decoration: none;
+	padding :15px 15px;
+	
+}
+li:hover{
+	cursor: pointer;
+	
+	background: #006400;
+
+}
+@keyframes sun{
+	10%{background:#00A2E8; }
+           20%{color:orange;}
+           30%{background: #A249A3;}
+           40%{color:green;}
+           50%{background:#880015; }
+           60%{color:pink;}
+           70%{background:#B97A57; }
+           80%{color:hotpink;}
+           90%{background:#22B14C; }
+           100%{color:#3E143E;}
+}
+
+	</style>
+</head>
+<body>
+
+	<ul>
+      
+          <li><a href="#">新盘</a></li> 
+          <li><a href="#">楼讯</a></li>
+          <li><a href="#">热门活动</a></li>
+          <li><a href="#">看房团</a></li>
+          <li><a href="#">房源</a></li>
+          <li><a href="#">商业地产</a></li>
+          <li><a href="#">海外地产</a></li>
+          <li><a href="#">贷款</a></li>
+          <li><a href="#">品牌专区</a></li>
+
+      
+
+	</ul>
+	
+</body>
+</html>
