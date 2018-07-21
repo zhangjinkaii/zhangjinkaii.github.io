@@ -3,10 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>淘宝网-热卖搜索</title>
+
 	<style>
 	*{
 		margin: 0;
 		padding: 0;
+	}
+	body{
+		background: #fff;
 	}
 		.da{
 			width: 1400px;
@@ -649,6 +653,8 @@
         	border: 1px solid #fff;
         	position: relative;
         	margin-top: 10px;
+        	/*position: fixed;*/
+        	/*background: #fff;*/
 
         }
         .da .logo .logo1{
@@ -789,6 +795,9 @@
 
 
           }
+          .yi-span span{
+          	color:#EF470F;
+          }
           .da .tuyi .yi-span .p1 a{
             font-size: 12px;
             color:#000;
@@ -853,6 +862,198 @@
 
 
           }
+          .da .logo2-box{
+          	width: 60px;
+          	height: 60px;
+          	/*border:1px solid red;*/
+          	background: url(images/logo2.PNG) no-repeat 0 -8px;
+          	position: absolute;
+          	bottom: 10px;
+          	right: 335px;
+          }
+
+          .da .zhang{
+          	width:1300px;
+          	height: 20px;
+          	line-height: 20px;
+          	background: #f5f5f5;
+          	border:1px solid #ccc;
+          	padding: 5px;
+          	overflow: hidden;
+          	margin-top:80px;
+          	font-size: 14px;
+          }
+          .da .zhang ul {
+          	list-style: none;
+          }
+          .da .zhang ul li{
+          	float: left;
+          }
+          .da .zhang ul li{
+          	margin-left: 25px;
+          }
+          .da .zhang ul li a{
+          	color:#3c3c3c;
+          }
+          .da .zhang ul li a:hover{
+          	color:#f85231;
+          }
+          .da .zhang ul li:nth-child(1){
+          	margin: 0;
+          	font-size: 16px;
+          	color:#F85231;
+          }
+          .da .zhang ul li:nth-child(12){
+          	float: right;
+          	margin-right: 10px;
+
+          }
+          .da .zhang ul li:nth-child(12) a{
+          	text-decoration: none;
+          }
+          .da .zhang ul li:nth-child(12) a:hover{
+          	color:#000;
+          }
+          .da .da-tu2{
+          	margin-top: 10px;
+          	height: 300px;
+          	position: relative;
+          }
+           .da .da-tu2 .yi-span{
+           	position: relative;
+           }
+
+          .da .da-tu2 .pai3{
+          	width: 100px;
+          	height: 60px;
+          	font-size: 12px;
+          	position: absolute;
+          	top: 70px;
+          	left: 0;
+          }
+
+          .da .da-tu2 .pai3 a {
+          	color:#000;
+          	text-decoration: none;
+          }
+          .da .da-tu2 .pai3 a:hover{
+          	text-decoration: underline;
+          }
+          .da .guanggao{
+            margin-top: 30px;
+            margin: 0 auto;
+            width:1400px;
+            height: 135px;
+            /*border:1px solid red;*/
+            overflow: hidden;
+
+          }
+          .da .guanggao .g1 , .g2 , .g3 {
+            width: 375px;
+            height: 130px;
+            margin-left: 45px;
+            border:2px solid #fff;
+            float: left;
+
+          }
+          .da .guanggao .g1{
+            /*margin-left: 0;*/
+            background: url(images/g1.PNG);
+          }
+          .da .guanggao .g2{
+            background: url(images/g2.PNG);
+          }
+          .da .guanggao .g3{
+            background: url(images/g3.PNG);
+          }
+          .da .guanggao .g3:hover{
+            border:2px solid #f22e00; 
+          }
+          .da .guanggao .g2:hover{
+            border:2px solid #f22e00; 
+          }
+          .da .guanggao .g1:hover{
+            border:2px solid #f22e00; 
+          }
+          .fixed{
+            width: 60px;
+            /*height: 300px;*/
+            /*border: 1px solid red;*/
+            position:fixed;
+            right:14.5%;
+            top: 200px;
+            text-align: center;
+
+            border-radius: 10px;
+          }
+          .fixed ul {
+            list-style: none;
+            font-size: 14px;
+          }
+          .fixed ul li {
+           padding: 10px 10px;
+           cursor: pointer;
+           /*border-radius: 10px;*/
+          }
+          .fixed li a{
+            color:#3c3c3c;
+            text-decoration: none;
+          }
+          .fixed li:hover{
+            background: #FF780F;
+          }
+           .fixed li:nth-child(1){
+            border-radius: 10px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+           }
+           .fixed li:nth-child(7){
+            border-radius: 10px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+           }
+
+
+          .fixed li:nth-child(1) a{
+            color:#fff;
+            text-decoration: none;
+            font-weight:700;
+          }
+          .fixed ul li:nth-child(1){
+            background:#FF6608;
+          }
+          .fixed li:nth-child(2) a{
+            color: #FF0055;
+            text-decoration: none;
+          }
+          .fixed li:nth-child(3) a{
+            color: #8D7AFB;
+            text-decoration: none;
+          }
+          .fixed li:nth-child(4) a{
+            color: #A8C001;
+            text-decoration: none;
+          }
+          .fixed li:nth-child(5) a{
+            color: #FF4400;
+            text-decoration: none;
+          }
+          .fixed li:hover a{
+            color:#fff;
+            font-weight: 700;
+          }
+          .fixed-logo{
+            width: 40px;
+            height: 20px;
+            /*border:1px solid red;*/
+            background: url(images/logo3.PNG) no-repeat;
+            position: fixed;
+            right:15.1%;
+            top: 177px;
+          }
+         
+
+
       
 	</style>
 </head>
@@ -1208,7 +1409,7 @@
        	<form action="">
 
        		<div class="logo1">
-       		<input type="text">
+       		<input type="text" value="女装">
              </div>
 
              <div class="logo2">
@@ -1282,10 +1483,9 @@
        		
        	</div>
 
-
        	 	<div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t13.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
        			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
@@ -1314,7 +1514,7 @@
        		</div>
        		<div class="yi-span">
        			<span class="qian"><a href="">¥<strong>61.00</strong></a></span>
-       			<p class="p1"><a href="">200斤胖MM宽松大码女装夏季条纹衬衫上衣</a></p>
+       			<p class="p1"><a href="">200斤胖MM宽松大码<span>女装</span>夏季条纹衬衫上衣</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1395,7 +1595,7 @@
        		</div>
        		<div class="yi-span">
        			<span class="qian"><a href="">¥<strong>238.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p1"><a href="">春装圆领灯笼套头A字大摆长款连衣裙</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1419,11 +1619,11 @@
 
 <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t1.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>238.00</strong></a></span>
+       			<p class="p1"><a href="">self portrait新款夏装 重磅蕾丝A字连衣裙</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1474,11 +1674,11 @@
 
         <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t3.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>298.00</strong></a></span>
+       			<p class="p1"><a href="">衬衫女2018春装新款<span>女装</span>纠纷宽松T</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1502,11 +1702,11 @@
 
          <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t4.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>229.00</strong></a></span>
+       			<p class="p1"><a href="">SSXIOYU少<span>女装</span>18夏季新款韩版c</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1528,11 +1728,11 @@
 
         <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t5.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>63.00</strong></a></span>
+       			<p class="p1"><a href="">肉显瘦宽松时髦v领夏季新款荷叶边连衣裙</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1555,11 +1755,11 @@
 
          <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t6.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>89.90</strong></a></span>
+       			<p class="p1"><a href="">2018夏季装雪纺衫短袖修身<span>女装</span>衬衫白色上</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1585,11 +1785,11 @@
 
        	<div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t7.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>39.00</strong></a></span>
+       			<p class="p1"><a href="">套头<span>女装</span>针织衫韩版毛衣加厚学生打底</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1614,7 +1814,7 @@
 
         <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t8.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
        			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
@@ -1642,7 +1842,7 @@
 
          <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t9.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
        			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
@@ -1670,11 +1870,11 @@
 
         <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t10.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>39.00</strong></a></span>
+       			<p class="p1"><a href="">漏脐上衣短款白色t女短袖学生夏季韩版</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1698,11 +1898,11 @@
 
         <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t11.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>99.00</strong></a></span>
+       			<p class="p1"><a href="">大码<span>女装</span>2018夏季胖mm减龄内群字拼</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1727,11 +1927,11 @@
 
         <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t12.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>69.00</strong></a></span>
+       			<p class="p1"><a href="">衬衣2018新款短袖雪纺衬衫女夏小清新上</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
        			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
@@ -1753,15 +1953,169 @@
 
        		
        	</div>
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t13.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>378.00</strong></a></span>
+       			<p class="p1"><a href="">时尚简约优雅气质中心长款绣花连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t14.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>99.00</strong></a></span>
+       			<p class="p1"><a href="">2018新款夏季<span>女装</span>chic宽松薄款外套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+       </div>
+
+         
+
+
+
+
+
+         <div class="guanggao">
+          <a href=""><div class="g1"></div></a>
+          <a href=""><div class="g2"></div></a>
+          <a href=""><div class="g3"></div></a>
+           
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="zhang">
+       	<ul>
+       		<li>掌柜热卖</li>
+       		<li><a href="">新款女装</a></li>
+       		<li><a href="">女装夏季</a></li>
+       		<li><a href="">女装短袖</a></li>
+       		<li><a href="">宽松女装</a></li>
+       		<li><a href="">韩版女装</a></li>
+       		<li><a href="">女装2018</a></li>
+       		<li><a href="">性感女装</a></li>
+       		<li><a href="">气质女装</a></li>
+       		<li><a href="">棉麻女装</a></li>
+       		<li><a href="">女装中长款</a></li>
+       		<li><a href="">我也要出现在这里</a></li>
+       		
+       	</ul>
+       	
+       </div>
+
+
+       <div class="da-tu2">
+
+       	 	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu1.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>228.00</strong></a></span>
+       			<p class="p1"><a href="">明星同款一字肩蓝色蕾丝修身显瘦连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai3"><a href="">销量：1234</a></div><div class="fen"><a href="">如实描述：4.8﹀</a>
+                 <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.8︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+       			</div>
+       		</div>
+       		
+       	</div>
+
+
+
+
+ 	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu7.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>139.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai3"><a href="">销量：1913</a></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
 <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t10.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>39.00</strong></a></span>
+       			<p class="p1"><a href="">漏脐上衣短款白色t女短袖学生夏季韩版</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
-       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+       			<div class="pai3"><a href="">销量：19111</a></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
                  	<ul>
                  		<li><a href="">如实描述：4.7︿</a></li>
@@ -1778,19 +2132,18 @@
        	</div>
 
 
-
-       	<div class="tuyi">
+ 	    <div class="tuyi">
        		<div class="tu-yi">
-       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		<a href="#"><img src="images/t15.jpg" alt=""></a>
        		</div>
        		<div class="yi-span">
-       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
-       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<span class="qian"><a href="">¥<strong>178.00</strong></a></span>
+       			<p class="p1"><a href="">欧洲站网红装裙子女装夏装2018新</a></p>
        			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
-       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+       			<div class="pai3"><a href="">销量：1250</a></div><div class="fen"><a href="">如实描述：4.7﹀</a>
                      <div class="fen-box">
                  	<ul>
-                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">如实描述：4.8︿</a></li>
                  		<li><a href="">服务态度：4.8</a></li>
                  		<li><a href="">发货速度：4.8</a></li>
                  	</ul>
@@ -1803,14 +2156,7 @@
        		
        	</div>
 
-
-
-
-
-
-
-
-
+       	
        </div>
 
 
@@ -1834,7 +2180,24 @@
           	Copyright©2004-2018<!--  京东JD.com 版权所有 -->
 
           </div>
+          <div class="logo2-box">
+          	 
+          </div>
 
-	</div>
+
+
+  </div>
+     <div class="fixed-logo"></div>
+          <div class="fixed">
+            <ul>
+              <li><a class="ai" href="">爱逛好货</a></li>
+              <li><a class="ai2" href="">好点直播</a></li>
+              <li><a class="ai3" href="">品质特色</a></li>
+              <li><a class="ai4" href="">实惠热卖</a></li>
+              <li><a href="">猜你喜欢</a></li>
+              <li><a href="">反馈</a></li>
+              <li><a href="">暴恐举报</a></li>
+            </ul>
+          </div>
 </body>
 </html>
