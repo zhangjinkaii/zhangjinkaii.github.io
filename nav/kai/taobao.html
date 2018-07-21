@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝网-热卖搜索</title>
+
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background: #fff;
+	}
+		.da{
+			width: 1400px;
+			/*height: 1000px;*/
+			border:1px solid #fff;
+			margin:0 auto;
+			position: relative;
+			position: relative;
+			position: relative;
+			position: relative;
+			position: relative;
+		}
+		.da .box1{
+			width: 300px;
+			height: 30px;
+			border:1px solid #fff;
+			float: left;
+		}
+		.da .box1 ul{
+			list-style: none;
+
+		}
+		.da .box1 ul li{
+			float: left;
+			margin-left: 10px;
+			line-height: 30px;
+			font-size: 14px
+		}
+		.da .box1 ul .box1-er{
+			margin-left: 40px;
+		}
+		.da .box1 ul .box1-yi a{
+			color:#f22e00;
+		}
+		.da .box1 ul li a{
+			color:#6c6c6c;
+			text-decoration: none;
+		}
+		.da .box1 ul li a:hover{
+			color:#F22E00;
+		}
+		.da .box2{
+			width: 750px;
+			height: 30px;
+			border:1px solid #fff;
+			float: right;
+			position: relative;
+		}
+		.da .box2 ul{
+			list-style: none;
+		}
+		.da .box2 ul li{
+            float: left;
+            font-size: 14px;
+            line-height: 30px;
+            margin-left:25px;
+		}
+		.da .box2 ul li a{
+			color:#6c6c6c;
+			text-decoration: none;
+		}
+		.da .box2 ul li a:hover{
+			color:#f22e00;
+		}
+		.da .box2 ul .box2-yi a{
+			color:#f22e00;
+		}
+		.da .box2 .box2-er{
+			width: 20px;
+			height: 20px;
+			background: url(images/5.PNG) no-repeat -3px 0;
+			position: absolute;
+			top:6px;
+			left: 165px;
+		}
+		.da .box2 ul .gou{
+			margin-left: 50px;
+		}
+		.da .box2 .box2-san{
+			width: 20px;
+			height: 20px;
+			background: url(images/3.PNG) no-repeat -3px 0;
+			position: absolute;
+			top:6px;
+			left: 190px;
+		}
+		.da .box2 .box2-si{
+			width: 20px;
+			height: 20px;
+			background: url(images/1.PNG) no-repeat -7px 0;
+			position: absolute;
+			top:6px;
+			left: 265px;
+		}
+		.da .box2 .box2-wu{
+			width: 20px;
+			height: 20px;
+			background: url(images/5.PNG) no-repeat -3px 0;
+			position: absolute;
+			top:6px;
+			left: 340px;
+		}
+		.da .box2 .box2-liu{
+			width: 20px;
+			height: 20px;
+			background: url(images/5.PNG) no-repeat -5px 0;
+			position: absolute;
+			top:6px;
+			right: 225px;
+		}
+		.da .box2 .box2-qi{
+			width: 20px;
+			height: 20px;
+			background: url(images/5.PNG) no-repeat -3px 0;
+			position: absolute;
+			top:6px;
+			right: 145px;
+		}
+		.da .box2 ul .wang{
+			margin-left: 50px;
+			position: relative;
+		}
+		.da .box2 .boxx1{
+			width: 100px;
+			height: 60px;
+			border:1px solid #a9a9a9;
+			position: absolute;
+			right:560px;
+			display: none;
+			z-index: 1;
+			background:#fff;
+		}
+		.da .box2 .boxx1 li{
+			margin: 0 0 0 10px;
+
+		}
+		.da .box2 .boxx1 li a:hover{
+			color:#6c6c6c;
+		}
+		.da .box2 .tao:hover .boxx1{
+			display: block;
+		}
+		.da .box2 .gou:hover .boxx2{
+			display: block;
+		}
+		.da .box2 .boxx2{
+			width: 300px;
+			height: 30px;
+			/*border:1px solid #fff;*/
+			position: absolute;
+			font-size: 14px;
+			display: none;
+			top:34px;
+			left:200px;
+			z-index: 1;
+			/*background:#fff;*/
+		}
+		.da .box2 .boxx2 a{
+			padding: 3px;
+			background: #f22e00;
+			color:#fff;
+		}
+		.da .box2 .boxx2 a:hover{
+			color: #fff;
+		}
+		.da .box2 .shouc:hover .boxx3{
+			display: block;
+		}
+		.da .box2 .boxx3{
+             width: 80px;
+             height: 60px;
+             border:1px solid #a9a9a9;
+             position: absolute;
+             top:28px;
+             left: 279px;
+             display: none;
+             z-index: 1;
+			background:#fff;
+		}
+		.da .box2 .boxx3 li{
+			margin:0 0 0 5px;
+		}
+		.da .box2 .boxx3 li a:hover{
+			color:#6c6c6c;
+		}
+		.da .box2 .mai:hover .boxx4{
+			display: block;
+		}
+		.da .box2 .boxx4{
+			width: 100px;
+			height: 200px;
+			border:1px solid #6c6c6c;
+			position:absolute;
+			top:28px;
+			right:220px;
+			display: none;
+			z-index: 1;
+			background:#fff;
+		}
+		.da .box2 .boxx4 li{
+			margin: 0 0 0 10px;
+		}
+		.da .box2 .boxx4 li a:hover{
+			color:#6c6c6c;
+		}
+		.da .box2 .lian:hover .boxx5{
+			display: block;
+		}
+		.da .box2 .boxx5{
+			width: 80px;
+			height: 60px;
+			border:1px solid #a9a9a9;
+			position: absolute;
+			top:28px;
+			right: 148px;
+			display: none;
+			z-index: 1;
+			background:#fff;
+		}
+		.da .box2 .boxx5 li{
+			margin:0 0 0 5px;
+		}
+		.da .box2 .boxx5 li a:hover{
+			color:#6c6c6c;
+		}
+
+		.da .di {
+			height:40px;
+			border:1px solid #ff9000;
+			margin-top: 70px;
+			background: #ff9000;
+			position: relative;
+		}
+		.da .di ul {
+			list-style: none;
+		}
+		.da .di ul li{
+			padding: 0 10px;
+			float: left;
+			line-height: 40px;
+			margin-left: 30px;
+			color:#fff;
+		}
+		.da .di ul li:hover{
+			background:#ff5000;
+		}
+		.da .di ul li a{
+			text-decoration: none;
+			color:#fff;
+		}
+		.da .di .di-yi{
+			margin-left: 50 px;
+		}
+		/*.da .left{
+			width: 300px;
+			height: 42px;
+			background: #ff9000;
+			position: absolute;
+			left:-300px;
+			top:800px;
+		}
+		.da .right{
+			width: 300px;
+			height: 42px;
+			background: #ff9000;
+			position: absolute;
+			right:-300px;
+			top:800px;
+		}*/
+
+		.da .dier{
+			width: 850px;
+			height: 40px;
+			border:1px solid #fff;
+			margin: 150px auto 0;
+
+		}
+		.da .dier ul{
+			list-style: none;
+		}
+		.da .dier ul li{
+			float: left;
+			margin-left: 15px;
+			font-size: 12px;
+			line-height: 40px;
+
+		}
+		.da .dier ul li a{
+			color:#6c6c6c;
+			text-decoration: none;
+		}
+		.da .dier ul li a:hover{
+			color:#E4393C;
+		}
+		.da .disan{
+			width: 300px;
+			height: 20px;
+			font-size: 12px;
+			color:#6c6c6c;
+			border:1px solid #fff;
+			margin:0 auto ;
+		}
+
+      @media screen and (max-width:1400px) {
+    .da .di ul li {
+        margin-left:12px;
+    }
+}
+     @media screen and (max-width:1180px) {
+    .da .di ul li {
+        margin-left:0;
+    }
+}
+
+     
+     @media screen and (max-width:1400px) {
+    .da .box1 ul li {
+        margin-left:0;
+    }
+} 
+
+       .da .wang:hover .wang-box{
+       	display: block;
+       }
+       .da .wang .wang-box{
+       	width: 1420px;
+       	height: 360px;
+       	border:1px solid #fff;
+       	background: #fff;
+       	position: absolute;
+       	top:30px;
+       	right:-81px;
+       	display: none;
+       	z-index: 99;
+       }
+       .da .wang .wang-box .boxx6{
+       	width: 300px;
+       	height: 340px;
+       	border:1px solid #fff;
+       	font-size: 12px;
+       	position: relative;
+
+       }
+       .da .wang .wang-box .boxx6 li{
+       	margin-top: 5px;
+       	margin:0;
+       	text-align: center;
+       }
+       .da .wang .wang-box .boxx6 li a{
+       	margin-left: 30px;
+       	padding:3px 3px;
+       }
+        .da .wang .wang-box .boxx6 li a:hover{
+        	background: #f22e00;
+        	color:#fff;
+        }
+        .da .wang .wang-box .boxx6 .h11{
+        	color:#f22e00;
+        	margin-left: 35px;
+        }
+        .da .wang .wang-box .boxx6 li .ban{
+        	margin-left: 16px
+        }
+        .da .wang .wang-box .boxx7{
+       	width: 300px;
+       	height: 340px;
+       	border:1px solid #fff;
+       	font-size: 12px;
+       position: absolute;
+       left:350px;
+       top:0;
+       /*position: relative;*/
+      
+
+       }
+       .da .wang .wang-box .boxx7 li{
+       	margin-top: 5px;
+       	margin:0;
+       	text-align: center;
+       }
+       .da .wang .wang-box .boxx7 li .fei{
+       	margin-left: 28px;
+       }
+       .da .wang .wang-box .boxx7 li a{
+       	white-space: pre-wrap;
+       	margin-left:35px;
+       	padding: 3px 3px; 
+       }
+       .da .wang .wang-box .boxx7 li a:hover{
+       	background: #9fb838;
+       	color:#fff;
+       }
+        .da .wang .wang-box .boxx7 .h22{
+        	color:#9fb838;
+        	margin-left: 35px;
+        }
+
+        .da .wang .wang-box .boxx8{
+       	width: 300px;
+       	height: 340px;
+       	border:1px solid #fff;
+       	font-size: 12px;
+       position: absolute;
+       left:710px;
+       top:0;
+       }
+       .da .wang .wang-box .boxx8 li{
+       	margin-top: 5px;
+       	margin:0;
+       	text-align: center;
+       }
+       .da .wang .wang-box .boxx8 li .gao{
+       	margin-left: 25px;
+       }
+       .da .wang .wang-box .boxx8 li a{
+       	white-space: pre-wrap;
+       	margin-left:35px;
+       	padding: 3px 3px; 
+
+       }
+       .da .wang .wang-box .boxx8 li a:hover{
+       	background: #d75696;
+       	color:#fff;
+       }
+        .da .wang .wang-box .boxx8 .h33{
+        	color:#d75696;
+        	margin-left: 35px;
+        }
+
+        .da .wang .wang-box .boxx9{
+       	width: 300px;
+       	height: 340px;
+       	border:1px solid #fff;
+       	font-size: 12px;
+       position: absolute;
+       right:0;
+       top:0;
+       }
+       .da .wang .wang-box .boxx9 li{
+       	margin-top: 10px;
+       	margin-left: 0;
+       	text-align: center;
+       }
+       .da .wang .wang-box .boxx9 li a{
+       	white-space: pre-wrap;
+       	margin-left:50px;
+       	padding: 3px 3px; 
+
+       }
+       .da .wang .wang-box .boxx9 .h44{
+        	color:#2e9fdb;
+        	margin-left: 50px;
+        }
+        .da .wang .wang-box .boxx9 li .daa{
+        	margin-left: 65px;
+        }
+        .da .wang .wang-box .boxx9 li a:hover{
+              background: #2e9fbd;
+              color:#fff;
+        }
+        .da .wang .wang-box .boxx6 .h11box{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:65px;
+        	top: 33px;
+        	animation: sun 0.5s linear infinite;
+        }
+        @keyframes sun{
+        	/*50%{transform: scale(0,1);}*/
+        	70%{transform: rotate(360deg);}
+        	100%{transform:translate(0,-5px);}
+        }
+        .da .wang .wang-box .boxx6 .h11box2{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	right:90px;
+        	bottom: 115px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx6 .h11box3{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	right:90px;
+        	top: 63px;
+        	animation: sun 0.5s linear infinite;
+        }
+
+        .da .wang .wang-box .boxx7 .h22box{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:95px;
+        	top: 36px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx7 .h22box2{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:80px;
+        	top: 60px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx7 .h22box3{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:180px;
+        	top: 93px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx7 .h22box4{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:175px;
+        	top: 153px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx7 .h22box5{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:189px;
+        	bottom: 145px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx7 .h22box6{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:189px;
+        	bottom: 55px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx8 .h33box{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:68px;
+        	top: 33px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx8 .h33box2{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	right:15px;
+        	top: 63px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx8 .h33box3{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	right:133px;
+        	top: 93px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx8 .h33box4{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:68px;
+        	top: 123px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx8 .h33box5{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	right:15px;
+        	top: 153px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx8 .h33box6{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	right:100px;
+        	bottom: 113px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx9 .h44box{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/8.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:95px;
+        	top: 43px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .wang .wang-box .boxx9 .h44box2{
+        	width: 10px;
+        	height: 10px;
+        	background: url(images/9.PNG) no-repeat -7px -5px;
+        	position: absolute;
+        	border:1px solid #fff;
+        	left:95px;
+        	bottom: 85px;
+        	animation: sun 0.5s linear infinite;
+        }
+        .da .logo{
+        	widows: 100%;
+        	height: 80px;
+        	border: 1px solid #fff;
+        	position: relative;
+        	margin-top: 10px;
+        	/*position: fixed;*/
+        	/*background: #fff;*/
+
+        }
+        .da .logo .logo1{
+        	width: 830px;
+        	height: 40px;
+        	border:2px solid #FF4200;
+        	position: absolute;
+            top:8px;
+            left:250px;
+        }
+        .da .logo input:focus{
+        	outline: none;
+        }
+        .da .logo .logo1 input{
+        	width: 820px;
+        	height: 34px;
+        	padding: 3px 5px;
+        	border: none;
+        }
+        .da .logo .logo2{
+        	width: 95px;
+        	height: 42px;
+        	/*border:1px solid #fff;*/
+        	position: absolute;
+        	right: 219px;
+        	top: 8px;
+        }
+        .da .logo .logo2 input{
+        	width: 95px;
+        	height: 44px;
+        	border:none;
+        	color:#fff;
+        	background:#FF4200;
+        	font-size: 16px;
+        }
+         .da .logo .logo3{
+         	width: 800px;
+         	height: 20px;
+         	border:1px solid #fff;
+         	position: absolute;
+         	top:52px;
+         	left:250px;
+         }
+         .da .logo .logo3 a{
+         	font-size: 12px;
+         	margin-left: 10px;
+         	text-decoration: none;
+         	color:#666;
+         }
+         .da .logo .logo3 .a1{
+         	margin-left: 0;
+         }
+         .da .logo .logo3 a:hover{
+         	color:#E22C37;
+         }
+         .da .logo .logo3 .a1{
+          	color:#EF470F;
+          }
+          .da .logo .logo3 .a2{
+          	color:#EF470F;
+          }
+          .da .logo .logo3 .a3{
+          	color:#EF470F;
+          }
+          .da .xiang{
+          	width: 100%;
+          	height: 30px;
+          	border:1px solid #E9E9E9;
+          	background-color: #F5F5F5;
+          	color:#666;
+          }
+          .da .xiang ul{
+          	list-style: none;
+          }
+          .da .xiang ul li{
+             
+          	display: initial;
+          	line-height: 30px;
+          	font-size: 12px;
+          	/*margin-left: 15px;*/
+          	padding: 0 5px;
+          	
+
+          }
+          .da .xiang ul .xiang-yi{
+          	color:#747474;
+          }
+          .da .xiang a{
+          	color: #666;
+          	text-decoration: none;
+          }
+          .da .xiang ul .xiang-er{
+          	padding: 0;
+          }
+          .da .xiang a:hover{
+          	color:#FF4200;
+          }
+          .da .da-tu{
+          	width: 100%;
+          	border:1px solid #fff;
+          	height: 1950px;
+          	margin-top: 10px;
+          }
+          .da .tuyi{
+          	width: 240px;
+          	margin-left: 10px;
+          	margin-top: 50px;
+          	float: left;
+          	margin-right: 90px;
+          	/*overflow: hidden;*/
+          	border:1px solid #fff;
+          	cursor: pointer;
+          }
+          .da .tuyi:hover{
+          	border:1px solid #EF470F;
+          }
+          .da .tuyi:hover .p1{
+           text-decoration: underline;
+          }
+          .da .tuyi .yi-span {
+          	width: 245px;
+          	/*height: 100px;*/
+          	border: 1px solid #fff;
+          	margin-top: 10px;
+          }
+          .da .tuyi .yi-span .qian a{
+          	color:#f40;
+          	text-decoration: none;
+          }
+          .da .tuyi .yi-span .qian a:hover{
+          	text-decoration: underline;
+          }
+          .da .tuyi .tu-yi {
+          	width: 240px;
+          	border: 1px solid #fff;
+          	text-align: center;
+          	margin-top: 5px;
+
+
+          }
+          .yi-span span{
+          	color:#EF470F;
+          }
+          .da .tuyi .yi-span .p1 a{
+            font-size: 12px;
+            color:#000;
+            margin-left: 3px;
+            text-decoration: none;
+          }
+          .da .tuyi .yi-span .p2 a{
+          	font-size: 12px;
+          	color:#666;
+          	text-decoration: none;
+          }
+          .da .tuyi .yi-span .p2 .span1{
+          	margin-left: 115px;
+          }
+          .da .tuyi .yi-span .pai{
+          	width: 20px;
+          	height: 20px;
+          	background: url(images/7.PNG);
+          	margin-top: 5px;
+          	display: inline-block;
+          	vertical-align: middle;
+          }
+          .da .tuyi .yi-span .pai2{
+          	width: 20px;
+          	height: 20px;
+          	background: url(images/6.PNG);
+          	margin-top: 5px;
+          	display: inline-block;
+          	vertical-align: middle;
+          }
+          .da .tuyi .yi-span .fen{
+          	font-size: 12px;
+          	display: inline-block;
+          	margin-left: 120px;
+          	vertical-align: middle;
+          	border:1px solid #a9a9a9;
+          	margin-top: 5px;
+          	position: relative;
+          }
+          .da .tuyi .yi-span .fen a{
+          	color:#000;
+          	text-decoration: none;
+
+          }
+          .da .tuyi .yi-span .fen a:hover{
+          	color:red;
+          }
+          .da .tuyi .yi-span .fen:hover .fen-box{
+          	display: block;
+          }
+          .da .tuyi .yi-span .fen .fen-box{
+          	width: 90px;
+          	border:1px solid #fff;
+          	position: absolute;
+          	top:0;
+          	left: 0;
+          	background: #fff;
+          	display: none;
+          }
+          .da .tuyi .yi-span .fen .fen-box ul{
+          	list-style:none;
+
+
+          }
+          .da .logo2-box{
+          	width: 60px;
+          	height: 60px;
+          	/*border:1px solid red;*/
+          	background: url(images/logo2.PNG) no-repeat 0 -8px;
+          	position: absolute;
+          	bottom: 10px;
+          	right: 335px;
+          }
+
+          .da .zhang{
+          	width:1300px;
+          	height: 20px;
+          	line-height: 20px;
+          	background: #f5f5f5;
+          	border:1px solid #ccc;
+          	padding: 5px;
+          	overflow: hidden;
+          	margin-top:80px;
+          	font-size: 14px;
+          }
+          .da .zhang ul {
+          	list-style: none;
+          }
+          .da .zhang ul li{
+          	float: left;
+          }
+          .da .zhang ul li{
+          	margin-left: 25px;
+          }
+          .da .zhang ul li a{
+          	color:#3c3c3c;
+          }
+          .da .zhang ul li a:hover{
+          	color:#f85231;
+          }
+          .da .zhang ul li:nth-child(1){
+          	margin: 0;
+          	font-size: 16px;
+          	color:#F85231;
+          }
+          .da .zhang ul li:nth-child(12){
+          	float: right;
+          	margin-right: 10px;
+
+          }
+          .da .zhang ul li:nth-child(12) a{
+          	text-decoration: none;
+          }
+          .da .zhang ul li:nth-child(12) a:hover{
+          	color:#000;
+          }
+          .da .da-tu2{
+          	margin-top: 10px;
+          	height: 300px;
+          	position: relative;
+          }
+           .da .da-tu2 .yi-span{
+           	position: relative;
+           }
+
+          .da .da-tu2 .pai3{
+          	width: 100px;
+          	height: 60px;
+          	font-size: 12px;
+          	position: absolute;
+          	top: 70px;
+          	left: 0;
+          }
+
+          .da .da-tu2 .pai3 a {
+          	color:#000;
+          	text-decoration: none;
+          }
+          .da .da-tu2 .pai3 a:hover{
+          	text-decoration: underline;
+          }
+          .da .guanggao{
+            margin-top: 30px;
+            margin: 0 auto;
+            width:1400px;
+            height: 135px;
+            /*border:1px solid red;*/
+            overflow: hidden;
+
+          }
+          .da .guanggao .g1 , .g2 , .g3 {
+            width: 375px;
+            height: 130px;
+            margin-left: 45px;
+            border:2px solid #fff;
+            float: left;
+
+          }
+          .da .guanggao .g1{
+            /*margin-left: 0;*/
+            background: url(images/g1.PNG);
+          }
+          .da .guanggao .g2{
+            background: url(images/g2.PNG);
+          }
+          .da .guanggao .g3{
+            background: url(images/g3.PNG);
+          }
+          .da .guanggao .g3:hover{
+            border:2px solid #f22e00; 
+          }
+          .da .guanggao .g2:hover{
+            border:2px solid #f22e00; 
+          }
+          .da .guanggao .g1:hover{
+            border:2px solid #f22e00; 
+          }
+          .fixed{
+            width: 60px;
+            /*height: 300px;*/
+            /*border: 1px solid red;*/
+            position:fixed;
+            right:3%;
+            top: 260px;
+            text-align: center;
+
+            border-radius: 10px;
+          }
+          .fixed ul {
+            list-style: none;
+            font-size: 14px;
+          }
+          .fixed ul li {
+           padding: 10px 10px;
+           cursor: pointer;
+           /*border-radius: 10px;*/
+          }
+          .fixed li a{
+            color:#3c3c3c;
+            text-decoration: none;
+          }
+          .fixed li:hover{
+            background: #FF780F;
+          }
+           .fixed li:nth-child(1){
+            border-radius: 10px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+           }
+           .fixed li:nth-child(7){
+            border-radius: 10px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+           }
+
+
+          .fixed li:nth-child(1) a{
+            color:#fff;
+            text-decoration: none;
+            font-weight:700;
+          }
+          .fixed ul li:nth-child(1){
+            background:#FF6608;
+          }
+          .fixed li:nth-child(2) a{
+            color: #FF0055;
+            text-decoration: none;
+          }
+          .fixed li:nth-child(3) a{
+            color: #8D7AFB;
+            text-decoration: none;
+          }
+          .fixed li:nth-child(4) a{
+            color: #A8C001;
+            text-decoration: none;
+          }
+          .fixed li:nth-child(5) a{
+            color: #FF4400;
+            text-decoration: none;
+          }
+          .fixed li:hover a{
+            color:#fff;
+            font-weight: 700;
+          }
+          .fixed-logo{
+            width: 40px;
+            height: 20px;
+            /*border:1px solid red;*/
+            background: url(images/logo3.PNG) no-repeat;
+            position: fixed;
+            right:3.6%;
+            top: 237px;
+          }
+         
+
+
+      
+	</style>
+</head>
+<body>
+	<div class="da">
+		<div class="box1">
+			<ul>
+				<li class="box1-yi"><a href="">亲，请登录</a></li>
+				<li><a href="">免费登录</a></li>
+				<li class="box1-er"><a href="">手机淘宝</a></li>
+			</ul>
+		</div>
+		<div class="box2">
+			<ul>
+				<li class="box2-yi"><a href="">淘宝首页</a></li>
+				<li class="tao"><a href=""><div class="box2-er"></div>我的淘宝</a>
+                  <div class="boxx1">
+                  	<ul>
+
+                  		<li><a href="">已买到的宝贝</a></li>
+                  		<li><a href="">我的足迹</a></li>
+
+                  	</ul>
+                  </div>
+
+				</li>
+				<li class="gou"><a href=""><div class="box2-san"></div>购物车<span style="color:#f22e00;">0</span><div class="box2-si"></div></a>
+                   <div class="boxx2">
+                   	   <p>您的购物车还没有任何宝贝。<a href="">查看我的购物车</a></p>
+                   </div>
+
+
+                   
+				</li>
+				<li class="shouc"><a href="">★收藏夹<div class="box2-wu"></div></a>
+                  <div class="boxx3">
+                  	  <ul>
+                  	  	<li><a href="">收藏的宝贝</a></li>
+                  	  	<li><a href="">收藏的店铺</a></li>
+                  	  </ul>
+
+                  </div>
+
+
+				</li>
+				<li><a href="">商品分类</a></li>
+				<li class="mai"><a href="">卖家中心<div class="box2-liu"></div></a>
+                     <div class="boxx4">
+                     	<ul>
+                     		<li><a href="">免费开店</a></li>
+                     		<li><a href="">已卖出的宝贝</a></li>
+                     		<li><a href="">已售出的宝贝</a></li>
+                     		<li><a href="">卖家服务中心</a></li>
+                     		<li><a href="">卖家培训中心</a></li>
+                     		<li><a href="">体验中心</a></li>
+                     	</ul>
+
+                     </div>
+
+
+				</li>
+				<li class="lian"><a href="">联系客服<div class="box2-qi"></div></a>
+                    <div class="boxx5">
+                    	<ul>
+                    		
+                    		<li><a href="">消费者客服</a></li>
+                    		<li><a href="">卖家客服</a></li>
+                    	</ul>
+
+                    </div>
+
+				</li>
+				<li class="wang"><a href="">网站导航</a>
+                    <div class="wang-box">
+                  <div class="boxx6">
+                  	<h2 class="h11">主题市场</h2>
+                  	<ul>
+                  		
+                  		<li>
+                  			<a href="">女装</a>
+                  			<a href="">男装</a>
+                  			<a href="">内衣</a>
+                  			<a href="">鞋靴</a>
+                  			<div class="h11box"></div>
+                  		</li>
+
+                  		<li>
+                  			<a href="">箱包</a>
+                  			<a href="">婴童</a>
+                  			<a href="">家电</a>
+                  			<a href="">数码</a>
+                  			<div class="h11box3"></div>
+                  		</li>
+
+                  		<li>
+                  			<a href="">手机</a>
+                  			<a href="">美妆</a>
+                  			<a href="">珠宝</a>
+                  			<a href="">眼睛</a>
+                  		</li> 
+
+                  		<li>
+                  			<a href="">手表</a>
+                  			<a href="">运动</a>
+                  			<a href="">户外</a>
+                  			<a href="">乐器</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="">游戏</a>
+                  			<a href="">动漫</a>
+                  			<a href="">影视</a>
+                  			<a href="">美食</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="">鲜花</a>
+                  			<a href="">宠物</a>
+                  			<a href="">农资</a>
+                  			<a href="">房产</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="">装修</a>
+                  			<a href="">建材</a>
+                  			<a href="">家具</a>
+                  			<a href="">百货</a>
+                  			<div class="h11box2"></div>
+
+                  		</li>
+
+                  		<li>
+                  			<a href="">汽车</a>
+                  			<a href="">二手车</a>
+                  			<a class="ban" href="">办公</a>
+                  			<a href="">定制</a>
+                  		</li>
+
+                  		<li>
+                  			<a href="">教育</a>
+                  			<a href="">卡卷</a>
+                  			<a href="">本地</a>
+                  		
+                  		</li>
+                  	</ul>
+                  	
+                  </div>
+
+                  <div class="boxx7">
+                  	<h2 class="h22">特色市场</h2>
+                  	<ul>
+                  		<li>
+                  			<a href="">iFashion</a>
+                  			<a href="">爱逛街</a>
+                  			<a href="">美妆秀</a>
+                  			<div class="h22box"></div>
+                  			
+                  		</li>
+
+                  		<li>
+                  			<a href="">全球购   </a>
+                  			<a href="">腔调    </a>
+                  			<a href="">淘女郎</a>
+                  			<div class="h22box2"></div>
+                  			
+                  		</li>
+
+                  	<li>
+                  			<a href="">星店      </a>
+                  			<a href="">极有家 </a>
+                  			<a href="">特色中国</a>
+                  			<div class="h22box3"></div>
+                  			
+                  		</li>
+
+                  		<li>
+                  			<a href="">拍卖会  </a>
+                  			<a href="">淘宝众筹</a>
+                  			<a class="fei" href="">中国制造</a>
+                  			
+                  		</li>
+
+                  		<li>
+                  			<a href="">飞猪     </a>
+                  			<a href="">亲宝贝   </a>
+                  			<a href="">闲鱼</a>
+                  			<div class="h22box4"></div>
+                  			
+                  		</li>
+
+                  		<li>
+                  			<a href="">农资     </a>
+                  			<a href="">天天特价</a>
+                  		    <a href="">Outlets</a>
+                  		    <div class="h22box5"></div>
+                  			
+                  		</li>
+
+                  		<li>
+                  			<a href="">俪人购  </a>
+                  			<a href="">聚名牌   </a>
+                  			<a href="">淘抢购</a>
+                  			
+                  		</li>
+
+                  		<li>
+                  			<a href="">全球精选</a>
+                  			<a class="fei" href="">非常大牌</a>
+                  			<a href="">试用</a>
+                  			
+                  		</li>
+                  		
+                  		<li>
+                  			<a href="">量贩团  </a>
+                  			<a href="">阿里翻译</a>
+                  			 <div class="h22box6"></div>
+                  		
+                  			
+                  		</li>
+                  	</ul>
+
+                  </div>
+
+                    <div class="boxx8">
+                    	<h2 class="h33">阿里APP</h2>
+                    	<ul>
+                    		<li>
+                    			<a href="">淘宝   </a>
+                    			<a href="">天猫    </a>
+                    			<a href="">支付宝</a>
+                    			<div class="h33box"></div>
+                    		</li>
+
+                    		<li>
+                    			<a href="">聚划算</a>
+                    			<a href="">飞猪    </a>
+                    			<a href="">蚂蚁聚宝</a>
+                    			<div class="h33box2"></div>
+                    		</li>
+
+                    		<li>
+                    			<a href="">旺信    </a>
+                    			<a href="">闲鱼   </a>
+                    			<a href="">阿里钱盾</a>
+                    			<div class="h33box3"></div>
+                    		</li>
+
+                    		<li>
+                    			<a href="">钉钉    </a>
+                    			<a href="">高德地图</a>
+                    			<a  class="gao" href="">点点虫</a>
+                    			<div class="h33box4"></div>
+                    		</li>
+
+                    		<li>
+                    			<a href="">虾米音乐</a>
+                    			<a class="gao" href="">淘票票</a>
+                    			<a href="">菜鸟裹裹</a>
+                    			<div class="h33box5"></div>
+                    		</li>
+
+                    		<li>
+                    			<a href="">爱逛街 </a>
+                    			<a href="">拍卖会 </a>
+                    			<a href="">阿里云</a>
+                    		</li>
+
+                    		<li>
+                    			<a href="">网商银行</a>
+                    			<a class="gao" href="">阿里邮箱</a>
+                    			<a class="gao" href="">阿里众包</a>
+                    			<div class="h33box6"></div>
+                    		</li>
+                    	</ul>
+
+                    </div>
+
+                    <div class="boxx9">
+                    	<h2 class="h44">精彩推荐集</h2>
+                    	<ul>
+                    		<li>
+                    			<a href="">余额宝</a>
+                    			<a class="daa" href="">大牌捡包包</a>
+                    			<div class="h44box"></div>
+                    		</li>
+
+                    		<li>
+                    			<a href="">淘公仔</a>
+                    			<a class="daa" href="">浏览器</a>
+                    		</li>
+
+                    		<li>
+                    			<a href="">淘宝香港</a>
+                    			<a href="">淘宝台湾</a>
+                    		</li>
+
+                    		<li>
+                    			<a href="">淘宝全球</a>
+                    			<a href="">淘宝东南亚</a>
+                    		</li>
+
+                    		<li>
+                    			<a href="">闺蜜淘货</a>
+                    			<a href="">大众评审</a>
+                    		</li>
+
+                    		<li>
+                    			<a href="">套工作</a>
+                    			<div class="h44box2"></div>
+                    			
+                    		</li>
+                    	</ul>
+                    	
+
+                    </div>
+                 </div>
+				</li>
+
+			</ul>
+
+		</div>
+          
+
+
+          <div class="di">
+          	<ul>
+          		<li class="di-yi"><a href="">主题市场</a></li>
+          		<li><a href="">天猫</a></li>
+          		<li><a href="">聚划算</a></li>
+          		<li><a href="">天猫超市</a></li>
+          		<li><a href="">淘抢购</a></li>
+          		<li><a href="">电器城</a></li>
+          		<li><a href="">司法拍卖</a></li>
+          		<li><a href="">中国制造</a></li>
+          		<li><a href="">兴农扶贫</a></li>
+          		<li><a href="">飞猪旅行</a></li>
+          		<li><a href="">只能生活</a></li>
+          		<li><a href="">苏宁易购</a></li>
+          	</ul>
+          </div>
+
+
+         <!--  <div class="left">
+          	
+          </div>
+
+
+          <div class="right">
+          	
+          </div> -->
+       <div class="logo">
+       	<img src="images/logo.PNG" alt="">
+       	<form action="">
+
+       		<div class="logo1">
+       		<input type="text" value="女装">
+             </div>
+
+             <div class="logo2">
+             	
+       		<input type="submit" value="搜 索">
+             </div>
+       	</form>
+       	<div class="logo3">
+       		<a class="a1" href="">客厅灯</a>
+       		<a class="a2" href="">床垫</a>
+       		<a class="a3" href="">浴室柜</a>
+       		<a href="">沙发</a>
+       		<a href="">沙发垫</a>
+       		<a href="">窗帘</a>
+       		<a href="">电风扇</a>
+       		<a href="">皮带</a>
+       		<a href="">鞋柜</a>
+       		<a href="">茶几</a>
+       		<a href="">拉杆箱</a>
+       		<a href="">抱枕</a>
+       		<a href="">男内裤</a>
+       		<a href="">电脑椅</a>
+       		<a href="">防晒衣</a>
+       		<a href="">衣柜</a>
+       	</div>
+       	
+       </div>
+
+
+
+       <div class="xiang">
+       	
+       	<ul>
+       		<li class="xiang-yi">您是不是想找:</li>
+       		<li class="xiang-er"><a href="">女装新款</a></li> |
+       		<li><a href="">夏季女装</a></li> |
+       		<li><a href="">女装夏</a></li> |
+       		<li><a href="">女装短袖</a></li> | 
+       		<li><a href="">宽松女装</a></li> |
+       		<li><a href="">韩版女装</a></li> |
+       		<li><a href="">2018女装</a></li> |
+       		<li><a href="">性感女装</a></li> |
+       		<li><a href="">气质女装</a></li> |
+       		<li><a href="">棉麻女装</a></li> |
+
+       	</ul>
+
+       </div>
+
+
+       <div class="da-tu">
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu1.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>228.00</strong></a></span>
+       			<p class="p1"><a href="">明星同款一字肩蓝色蕾丝修身显瘦连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.8﹀</a>
+                 <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.8︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+       			</div>
+       		</div>
+       		
+       	</div>
+
+       	 	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t13.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu3.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>61.00</strong></a></span>
+       			<p class="p1"><a href="">200斤胖MM宽松大码<span>女装</span>夏季条纹衬衫上衣</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu6.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>46.00</strong></a></span>
+       			<p class="p1"><a href="">装欧根纱罩衫花背心不规则系带牛仔短裙潮</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<!-- <div class="pai"></div> --><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu7.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>139.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu9.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>238.00</strong></a></span>
+       			<p class="p1"><a href="">春装圆领灯笼套头A字大摆长款连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t1.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>238.00</strong></a></span>
+       			<p class="p1"><a href="">self portrait新款夏装 重磅蕾丝A字连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu2.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t3.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>298.00</strong></a></span>
+       			<p class="p1"><a href="">衬衫女2018春装新款<span>女装</span>纠纷宽松T</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+         <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t4.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>229.00</strong></a></span>
+       			<p class="p1"><a href="">SSXIOYU少<span>女装</span>18夏季新款韩版c</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t5.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>63.00</strong></a></span>
+       			<p class="p1"><a href="">肉显瘦宽松时髦v领夏季新款荷叶边连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+         <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t6.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>89.90</strong></a></span>
+       			<p class="p1"><a href="">2018夏季装雪纺衫短袖修身<span>女装</span>衬衫白色上</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t7.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>39.00</strong></a></span>
+       			<p class="p1"><a href="">套头<span>女装</span>针织衫韩版毛衣加厚学生打底</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t8.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+         <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t9.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>79.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t10.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>39.00</strong></a></span>
+       			<p class="p1"><a href="">漏脐上衣短款白色t女短袖学生夏季韩版</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t11.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>99.00</strong></a></span>
+       			<p class="p1"><a href="">大码<span>女装</span>2018夏季胖mm减龄内群字拼</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+
+
+
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t12.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>69.00</strong></a></span>
+       			<p class="p1"><a href="">衬衣2018新款短袖雪纺衬衫女夏小清新上</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+
+
+
+
+
+       		
+       	</div>
+        <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t13.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>378.00</strong></a></span>
+       			<p class="p1"><a href="">时尚简约优雅气质中心长款绣花连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+       	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t14.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>99.00</strong></a></span>
+       			<p class="p1"><a href="">2018新款夏季<span>女装</span>chic宽松薄款外套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai2"></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+       </div>
+
+         
+
+
+
+
+
+         <div class="guanggao">
+          <a href=""><div class="g1"></div></a>
+          <a href=""><div class="g2"></div></a>
+          <a href=""><div class="g3"></div></a>
+           
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <div class="zhang">
+       	<ul>
+       		<li>掌柜热卖</li>
+       		<li><a href="">新款女装</a></li>
+       		<li><a href="">女装夏季</a></li>
+       		<li><a href="">女装短袖</a></li>
+       		<li><a href="">宽松女装</a></li>
+       		<li><a href="">韩版女装</a></li>
+       		<li><a href="">女装2018</a></li>
+       		<li><a href="">性感女装</a></li>
+       		<li><a href="">气质女装</a></li>
+       		<li><a href="">棉麻女装</a></li>
+       		<li><a href="">女装中长款</a></li>
+       		<li><a href="">我也要出现在这里</a></li>
+       		
+       	</ul>
+       	
+       </div>
+
+
+       <div class="da-tu2">
+
+       	 	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu1.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>228.00</strong></a></span>
+       			<p class="p1"><a href="">明星同款一字肩蓝色蕾丝修身显瘦连衣裙</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai3"><a href="">销量：1234</a></div><div class="fen"><a href="">如实描述：4.8﹀</a>
+                 <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.8︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+       			</div>
+       		</div>
+       		
+       	</div>
+
+
+
+
+ 	<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/tu7.PNG" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>139.00</strong></a></span>
+       			<p class="p1"><a href="">ccdd朵以森女系小心机00后学生两件套</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai3"><a href="">销量：1913</a></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+
+<div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t10.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>39.00</strong></a></span>
+       			<p class="p1"><a href="">漏脐上衣短款白色t女短袖学生夏季韩版</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai3"><a href="">销量：19111</a></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.7︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+
+ 	    <div class="tuyi">
+       		<div class="tu-yi">
+       		<a href="#"><img src="images/t15.jpg" alt=""></a>
+       		</div>
+       		<div class="yi-span">
+       			<span class="qian"><a href="">¥<strong>178.00</strong></a></span>
+       			<p class="p1"><a href="">欧洲站网红装裙子女装夏装2018新</a></p>
+       			<p class="p2"><span class="jiang"><a href="">江南团猫</a></span><a class="span1" href="">197人付款</a> <span></span></p>
+       			<div class="pai3"><a href="">销量：1250</a></div><div class="fen"><a href="">如实描述：4.7﹀</a>
+                     <div class="fen-box">
+                 	<ul>
+                 		<li><a href="">如实描述：4.8︿</a></li>
+                 		<li><a href="">服务态度：4.8</a></li>
+                 		<li><a href="">发货速度：4.8</a></li>
+                 	</ul>
+                 </div>
+
+
+       			</div>
+
+       		</div>
+       		
+       	</div>
+
+       	
+       </div>
+
+
+
+
+          <div class="dier">
+          	<ul>
+          		<li><a href="">阿里巴巴集团</a> |</li>
+          		<li><a href="">淘宝网</a> |</li>
+          		<li><a href="">天猫</a> |</li>
+          		<li><a href="">聚划算</a> |</li>
+          		<li><a href="">全球速卖通</a> |</li>
+          		<li><a href="">阿里巴巴国际交易市场</a> |</li>
+          		<li><a href="">1688</a> |</li>
+          		<li><a href="">阿里妈妈</a> |</li>
+          		<li><a href="">飞猪</a> |</li>
+          		<li><a href="">阿里云计算</a> |</li>
+          	</ul>
+          </div>
+          <div class="disan">
+          	Copyright©2004-2018<!--  京东JD.com 版权所有 -->
+
+          </div>
+          <div class="logo2-box">
+          	 
+          </div>
+
+
+
+  </div>
+     <div class="fixed-logo"></div>
+          <div class="fixed">
+            <ul>
+              <li><a class="ai" href="">爱逛好货</a></li>
+              <li><a class="ai2" href="">好点直播</a></li>
+              <li><a class="ai3" href="">品质特色</a></li>
+              <li><a class="ai4" href="">实惠热卖</a></li>
+              <li><a href="">猜你喜欢</a></li>
+              <li><a href="">反馈</a></li>
+              <li><a href="">暴恐举报</a></li>
+            </ul>
+          </div>
+</body>
+</html>
