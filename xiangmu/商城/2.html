@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绿色食品商城</title>
+	<style>
+	    *{
+	       	margin: 0;
+	       	padding: 0;
+	    }
+		.ding{
+			width: 100%;
+			height: 31px;
+			background: #f5f5f5;
+			color:#7f7f7a;
+			border:1px solid #e6e6e6;
+			font-size: 12px;
+			line-height: 31px;
+			color:#3e3e39;
+			border-left:none;
+		   	border-right:none;
+
+		}
+		.ding-box a{
+			color:#7f7f7a;
+			text-decoration: none;
+		}
+		.ding-box{
+			width: 1200px;
+			height: 31px;
+			margin: 0 auto;
+			/*border:1px solid red;*/
+			/*overflow: hidden;*/
+			position: relative;
+		}
+		.zhuce{
+			list-style: none;
+			display: inline;
+			text-align: center;
+
+		}
+		.zhuce li{
+			width: 50px;
+			float: right;
+		}
+		.left-ding {
+			width: 350px;
+			height: 31px;
+			/*border:1px solid red;*/
+
+			
+		}
+		.denglu{
+			margin-left: 5px;
+			padding-left: 10px;
+			background: url(image/xiaoxixian.PNG) no-repeat -7px 3px;
+		}
+		.ding-box .shouye{
+			color:#3e3e39;
+		}
+		.ding-box .maijia{
+			margin-left: 15px;
+			color:#83bc0d;
+		}
+		.zhuce li:hover a {
+			color:#83bc0d;
+		}
+		.right-ding {
+			width: 430px;
+			/*height: 31px;*/
+			/*border: 1px solid red;*/
+			/*float: right;*/
+			position: absolute;
+			right: 0;
+			top:0;
+		}
+		.right-ding ul {
+			list-style: none;
+
+		}
+		.right-ding ul li{
+			/*line-height: 0;*/
+			padding: 0 10px 0 11px;
+			float: left;
+			font-size: 12px;
+		}
+		.right-ding ul a:hover{
+			color:#83bc0d;
+		}
+		.right-ding .gouwuche{
+			display: inline-block;
+			width: 14px;
+			height: 12px;
+			background: url(image/jingling.png) no-repeat -1377px -26px;
+			margin-right: 8px;
+		}
+		.right-ding .xiao1{
+			padding-left: 10px;
+			background: url(image/xiaoxixian.PNG) no-repeat -7px 3px;
+		}
+		.right-ding .xiao{
+			width: 68px;
+			height: 31px;
+			padding-left: 10px;
+			background: url(image/xiaoxixian.PNG) no-repeat -7px 3px;
+		}
+
+		.right-ding .shangcheng .shangcheng-box {
+			position: absolute;
+
+			top:30px;
+			left: 0px;
+			border:1px solid #ccc;
+			border-top:none;
+			display: none;
+			z-index: 99;
+		}
+		.right-ding .shangcheng{
+			border:1px solid #f5f5f5;
+			border-bottom: none;
+
+		}
+
+		
+		.right-ding .shangcheng:hover{
+			border:1px solid #ccc;
+			border-bottom: none;
+			
+			background: #fff;
+		}
+		.right-ding .shangcheng .shangcheng-box li{
+               float: none;
+               line-height: 23px;
+               background: #fff;
+               
+		}
+
+		.right-ding .shangcheng:hover .shangcheng-box{  
+                display: block;
+
+		}
+		.right-ding .weixinduan .weixinduan-box {
+			width: 90px;
+			height: 90px;
+			position: absolute;
+			text-align: center;
+			background: #fff;
+			right: 145px;
+			top: 30px;
+			display: none;
+			border:1px solid #ccc;
+			z-index: 99;
+		}
+		.right-ding .weixinduan{
+			border:1px solid #f5f5f5;
+			border-bottom: none;
+		}
+		.right-ding .weixinduan:hover{
+			background: #fff;
+			border:1px solid #ccc;
+			border-bottom: none;
+		}
+		.right-ding .weixinduan img {
+			width: 70px;
+			height: 70px;
+			margin-top: 5px;
+		}
+		.right-ding .weixinduan:hover .weixinduan-box{
+            display: block;
+		}
+		/*.right-ding .xiao1{
+			border:1px solid #f5f5f5;
+			border-bottom: none;
+		}
+		.right-ding .xiao1:hover{
+			border:1px solid #ccc;
+			border-bottom: none;
+		}*/
+		.right-ding .xiao1 .xiao1-box{
+			width: 75px;
+			position: absolute;
+			top:30px;
+			right: 105px;
+			background: #fff;
+			text-align: center;
+			display: none;
+			z-index: 99;
+		}
+		.right-ding .xiao1 .xiao1-box li{
+			padding:0;
+			float: none;
+			line-height: 23px;
+
+		}
+		.right-ding .xiao1:hover .xiao1-box {
+            display: block;
+		}
+		.right-ding .xiao .xiao-box {
+			position: absolute;
+			top:30px;
+			right: 18px;
+			background: #fff;
+			width: 65px;
+			text-align: center;
+			display: none;
+			z-index: 99;
+
+		}
+		.right-ding .xiao .xiao-box li{
+			float: none;
+			padding:0;
+			line-height: 23px;
+
+		}
+		.right-ding .xiao:hover .xiao-box{
+			display: block;
+		}
+		.logo {
+			width: 1200px;
+			height: 120px;
+			margin: 0 auto;
+			border: 1px solid #fff;
+			position: relative;
+		}
+		.logo .logo-box{
+			margin-top: 25px;
+			
+		}
+		.logo .input {
+			width: 590px;
+			height: 38px;
+			border:2px solid #83bc0d;
+			 position: absolute;
+			 top:26px;
+			 left: 320px;
+		}
+		.logo .input .text {
+			width: 462px;
+			height: 34px;
+			padding-left: 12px;
+			/*margin-left: 16px;*/
+			border: none;
+		}
+		.logo .input .text:focus{
+			outline: none;
+		}
+		.logo .input .submit {
+			width: 67px;
+			height: 38px;
+			background: #83bc0d;
+			border:1px solid #83bc0d;
+			cursor: pointer;
+			float: right;
+
+		}
+		.shang {
+			width: 39.5px;
+            display: inline-block;
+            font-size: 14px;
+            text-align: center;
+            position: relative;
+		}
+		.shang a{
+			text-decoration: none;
+			color:#666;
+		}
+		.shang:hover ul{
+			display: inline-block;
+		}
+		.shang ul {
+			list-style: none;
+			position: absolute;
+			left: 5px;
+			background: #fff;
+			display: none;
+		}
+		.erweima {
+			width: 150px;
+			height: 50px;
+			position: absolute;
+			top:28px;
+			right: 10px;
+		}
+		.erweima img {
+			width: 100%;
+			
+		}
+		.hong {
+			position: absolute;
+			top:67px;
+			left:320px;
+		}
+		.hong a {
+			color:#83bc0d;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		.quanbu{
+			width: 100%;
+			height: 36px;
+			/*border:1px solid red;*/
+
+		}
+		.quanbu .quanbu-box{
+			width: 1200px;
+			height: 36px;
+			/*border:1px solid red;*/
+			margin: 0 auto;
+			position: relative;
+		}
+		.quanbu .quanbu-box .fenlei{
+			width: 200px;
+			height: 35px;
+			background:#83bc0d; 
+			/*padding: 0px 0 0 10px;*/
+			
+			line-height: 35px;
+		}
+		.quanbu .quanbu-box .fenlei .fen {
+			font-size: 15px;
+			margin-left: 10px;
+			padding-left: 35px;
+			color:#fff;
+			text-decoration: none;
+			background: url(image/l1.PNG) no-repeat 2px 5px;
+		}
+		.shouye-box{
+			position: absolute;
+			top:8px;
+			left: 260px;
+		}
+		.shouye-box a{
+			color: #83bc0d;
+			text-decoration: none;
+			font-size: 15px;
+		}
+		.neirong-box{
+			width: 200px;
+			height: 323px;
+			background: #2a2a2e;
+			position: absolute;
+			top:35px;
+			
+		}
+		/*.neirong-box:hover{
+			animation: den 10s linear;
+		}*/
+		/*.neirong-box ul li:hover{
+			animation: den 10s linear infinite; 
+		}
+		@keyframes den {
+			 10%{background:#00A2E8; }
+           20%{color:orange;}
+           30%{background: #A249A3;}
+           40%{color:green;}
+           50%{background:#880015; }
+           60%{color:pink;}
+           70%{background:#B97A57; }
+           80%{color:hotpink;}
+           90%{background:#22B14C; }
+           100%{color:#3E143E;}
+		}*/
+		.neirong-box ul {
+			list-style: none;
+			line-height: 37px;
+			cursor: pointer;
+
+		}
+		/*.neirong-box ul li:hover a{
+           animation: ddd 10s linear infinite;
+		}*/
+		@keyframes ddd {
+		   10%{color:#f09; }
+		   15%{color:#00A2E8; }
+           20%{color:#06c;}
+           25%{color:#A90F0F;}
+           30%{color: #A249A3;}
+           34%{color: #AD26E5;}
+           40%{color:green;}
+           45%{color:#F52797;}
+           50%{color:#880015; }
+           55%{color:#5E199E; }
+           60%{color:red;}
+           65%{color:#1FA3BF;}
+           70%{color:#B97A57; }
+           75%{color:#28C298; }
+           80%{color:hotpink;}
+           85%{color:#667707;}
+           90%{color:#22B14C; }
+           95%{color:#B54513; }
+           100%{color:#f60;}
+		}
+		.neirong-box:hover ul li a{
+			animation: ddd 10s linear infinite;
+		}
+
+		/*@keyframes sunn{
+           10%{background:#00A2E8; }
+           20%{color:orange;}
+           30%{background: #A249A3;}
+           40%{color:green;}
+           50%{background:#880015; }
+           60%{color:pink;}
+           70%{background:#B97A57; }
+           80%{color:hotpink;}
+           90%{background:#22B14C; }
+           100%{color:#3E143E;}
+		}*/
+
+    .neirong-box ul li a:hover{
+    	animation: douu 10s linear infinite;
+    }
+		@keyframes douu{
+		   10%{color:#A5CC66;}
+           
+           20%{color:orange;}
+          
+           40%{color:green;}
+           
+           60%{color:pink;}
+           
+           80%{color:hotpink;}
+          
+           100%{color:#3E143E;}
+		}
+		.neirong-box ul li i {
+			width: 24px;
+			height: 24px;
+			margin-left: 20px;
+			
+
+		}
+		.neirong-box ul img {
+			width: 24px;
+			height: 24px;
+			vertical-align: middle;
+		}
+		
+		.neirong-box ul li a {
+			color:#fff;
+			font-size: 15px;
+			margin-left: 10px;
+			padding: 0;
+			vertical-align: middle;
+			text-decoration: none;
+		}
+		.neirong-box ul li:hover {
+			background: rgba(255,255,255,.2);
+
+		 }
+		  .you-box{
+		 	width: 600px;
+		 	height: 350px;
+		 	/*border:1px solid green;*/
+		 	position: absolute;
+		 	top:0;
+		 	left: 200px;
+		 	/*position: relative;*/
+		 	display: none;
+		 	background: #fff;
+		 }
+		 .neirong-box li:hover .you-box{
+         display: block;
+		 }
+
+		 .you-box .youright-box {
+		 	width: 120px;
+		 	height: 350px;
+		 	background: #f0f0f0;
+		 	position: absolute;
+		 	right: 0;
+		 	top:0;
+		 	text-align: center;
+		 }
+		 .you-box .youright-box h6{
+		 	font-weight: 400;
+
+		 }
+		  .you-box .youright-box li{
+		 	width: 90px;
+		 	height: 40px;
+		 	margin-left: 10px;
+		 	margin-top: 9px;
+		 }
+		  .you-box .youright-box li img{
+		 	width: 90px;
+		 	height: 40px;
+		 }
+		  .you-box .jing-box{
+		 	width: 450px;
+		 	/*height: 40px;*/
+		 	border-bottom: 1px dashed #3c3c3c;
+		 	display: inline-block;
+
+		 }
+		  .you-box .jing-box ul li a{
+		 	font-size: 12px;
+		 	color:#757a7f;
+		 	margin-right: 5px;
+		 }
+		   .you-box .jing-box ul li a:hover{
+		  	color:#83bc0d;
+		  }
+		  .you-box .jing-box ul li .jing{
+		 	color:#3e3e3a;
+		 	margin-right: 30px;
+		 	margin-left: 20px;
+		 }
+		  .you-box .jing-box ul li .jing:hover{
+		 	color:#3e3e3a;
+		 }
+		  .you-box .jing-box ul li {
+		 	float: left;
+		 }
+		 .tonglan{
+		 	width: 100%;
+		 	height: 320px;
+		 	/*border:1px solid #fff;*/
+		 	background: url(image/b1.jpg) no-repeat;
+		 	background-size: 100% 100%;
+		 	text-align: center;
+		 	/*position: relative;*/
+		 	animation: sun 15s linear infinite;
+		 	border-top:2px solid #83bc0d;
+		 	border-left:none;
+		   	border-right:none;
+
+		 }
+		 .tonglan .yuan{
+		 	/*position: absolute;*/
+		 margin-top: 280px;
+
+		 }
+		 .tonglan .yuan span {
+		 	display: inline-block;
+		 	width: 15px;
+		 	height: 15px;
+		 	background: #fff;
+		 	border-radius: 50%;
+		 	margin-left: 10px;
+
+		 }
+
+		 @keyframes dun {
+		 	100%{background: #000}
+		 }
+		 @keyframes sun {
+		 	25%{background: url(image/b2.jpg) no-repeat;background-size: 100% 100%;}
+		 	50%{background: url(image/b3.jpg) no-repeat;background-size: 100% 100%;}
+		 	75%{background: url(image/b1.jpg) no-repeat;background-size: 100% 100%;}
+		 }
+		 .da {
+		 	width: 1200px;
+		 	/*height: 1000px;*/
+		 	/*border:1px solid #fff;*/
+		 	/*margin-top: 20px;*/
+		 	margin: 0 auto;
+		 }
+		 .da-box1{
+		 	height: 160px;
+		 	/*border:1px solid red;*/
+		 	margin-top: 20px;
+		 }
+		 .da-box1 div{
+		 	display: inline-block;
+		 }
+		  .da-box1 .box2 {
+		  	width: 516px;
+		  	float: right;
+		  }
+		  .da-box1 .box2 img {
+		  	width: 516px;
+		  	height: 160px;
+		  }
+		   .da-box1 .box1 {
+		  	width: 430px;
+		  	float: right;
+		  }
+		  .da-box1 .box1 img {
+		  	width: 430px;
+		  	height: 160px;
+		  }
+		  h3 {
+		  	margin:20px 0;
+		  }
+		  .da-box2{
+		  	width: 100%;
+		  	height: 220px;
+		  	/*border:1px solid red;*/
+		  	
+		  }
+		   .da-box2 div {
+		   	display: inline-block;
+		   }
+		   .box2-1{
+		   	width: 390px;
+		   	height: 220px;
+		   	background: url(img/5.jpg) no-repeat;
+		   
+		   	/*background: url(img/3.jpg) no-repeat;
+		   	background: url(img/4.jpg) no-repeat;*/
+		   }
+		   .box2-1 img {
+		   	width: 390px;
+		   	height: 220px;
+		   }
+		   .box2-1:hover{
+            
+           background: url(img/5.jpg) no-repeat -15px 0
+
+		   }
+		   /*@keyframes dun {
+		   	to{background: url(img/5.jpg) no-repeat -10px 0;}
+		   }*/
+		   .box2-2{
+		   	width: 310px;
+		   	height: 220px;
+		   	background: url(img/6.jpg) no-repeat;
+		   }
+		    .box2-2:hover{
+            
+           background: url(img/6.jpg) no-repeat -15px 0
+
+		   }
+		   .box2-2 img {
+		   	width: 310px;
+		   	height: 220px;
+		   }
+		    /*.box2-2:hover img{
+            
+            transform: translateX(-10px)
+
+		   }*/
+		   .box2-3{
+		   	width: 250px;
+		   	height: 220px;
+		   	 background: url(img/3.jpg) no-repeat
+		   	}
+		   	 .box2-3:hover{
+            
+           background: url(img/3.jpg) no-repeat -15px 0;
+
+		   
+		   }
+		   .box2-3 img {
+		   	width: 250px;
+		   	height: 220px;
+		   }
+		   /* .box2-3:hover img{
+            
+            transform: translateX(-10px)
+
+		   }*/
+		   .box2-4{
+		   	width: 230px;
+		   	height: 220px;
+		   	float: right;
+		   	background: url(img/4.jpg) no-repeat;
+		   }
+		 
+		    .box2-4:hover{
+            
+           	background: url(img/4.jpg) no-repeat -15px 0;
+
+		   }
+		   .h3-box{
+		   	width: 100%;
+		   	height: 40px;
+		   	border-bottom: 1px solid #83bc0d;
+		   	position: relative;
+		   	margin-bottom: 3px;
+		   	margin-top: 20px;
+		   	margin-bottom: 20px;
+		   }
+		   .h3-box a {
+		   	font-size: 14px;
+		   	color:#83bc0d;
+		   	text-decoration: none;
+		   	float: right;
+		   	line-height: 45px;
+		   	margin-right: 20px;
+		   }
+		   .h3-1{
+
+		   	display: inline-block;
+		   	margin-top: 10px;
+		   	margin-bottom: 15px;
+		   	font-size: 16px;
+		   	border-left:4px solid #83bc0d;
+		   	padding-left:12px; 
+		   }
+		   .xiao {
+		   	width: 10px;
+		   	height: 6px;
+		   	background: url(img/xiao.PNG);
+		   	position: absolute;
+		   	right: 30px;
+		   	bottom: -1px;
+		   }
+		   .da-box3{
+		   	width: 100%;
+		   	height: 450px;
+		   	/*border:1px solid red;*/
+		   	position: relative;
+		   }
+		   .da-box3 div{
+		   	display: inline-block;
+		   }
+
+		   .box3-1{
+		   	width: 230px;
+		   	height: 450px;
+		   	position: relative;
+		   }
+		   .box3-1-a {
+		   	position: absolute;
+		   	top: 175px;
+		   	left: 25px;
+		   }
+		   .box3-1-a a{
+            color:#000;
+            font-size: 12px;
+            text-decoration: none;
+		   }
+		   .box3-1-left{
+		   	width: 9px;
+		   	height: 14px;
+		   	background: url(image/jingling.png) no-repeat -1351px -26px;
+		   	position: absolute;
+		   	bottom: 125px;
+		   	left: 5px;
+		   }
+		   .box3-1-right{
+		   	width: 9px;
+		   	height: 14px;
+		   	background: url(image/jingling.png) no-repeat -1377px 0;
+		   	position: absolute;
+		   	bottom: 125px;
+		   	right: 5px;
+		   }
+		   .box3-center {
+		   	width: 150px;
+		   	height: 100px;
+		   	position: absolute;
+		   	/*border: 1px solid red;*/
+		   	bottom: 70px;
+		   	left: 40px;
+		   }
+		   .box3-2{
+		   	width: 430px;
+		   	height: 450px;
+		   /*	margin: 20px 0;
+*/
+		   }
+
+		   .box3-2 img{
+		   	width: 470px;
+		   	height: 450px;
+
+		   }
+		   .box3-3 {
+		   	width: 470px;
+		   	height: 450px;
+		   	/*border:1px solid red;*/
+		   	/*display: inline-block;*/
+		   	position: absolute;
+		   	right: 0;
+		   	top: 0;
+		   }
+		   .box3-3 div{
+		   	width: 230px;
+		   	height: 222px;
+
+            display: inline-block;
+            background: #f5f5f5;
+		   }
+		   .box3-3 div img{
+		   	width: 230px;
+		   	height: 222px;
+		   }
+		   .h3-2 {
+		   	border-left:4px solid #f00f34;
+		   	padding-left: 12px;
+		   		margin: 20px 0;
+		   	font-size: 18px;
+		   	font-weight: normal;
+		   }
+		   .da-box4{
+		   	width: 100%;
+		   	height: 230px;
+		   }
+		    .da-box4 img{
+		   	width: 100%;
+		   	height: 230px;
+		   }
+		   .da-box5 {
+		   	width: 100%;
+		   	height: 300px;
+		   	/*border:1px solid red;*/
+		   	margin-top: 10px;
+		   	/*margin-left: 25px;*/
+		   }
+		   .da-box5 div{
+		   	width: 230px;
+		   	height: 300px;
+		   	/*background: #000;*/
+		   	display: inline-block;
+		   	margin-left: 7px;
+
+
+		   }
+		   .da-box5 div:nth-child(1){
+		   	margin-left: 0px;
+		   }
+
+
+		   .da-box5 img{
+		   	width: 230px;
+		   	height: 300px;
+		   }
+		   .kefu-box{
+		   	width: 100%;
+		   	height: 106px;
+		   	border:1px solid #f8f8f8;
+		   	background: #f8f8f8;
+		   	margin-top: 40px;
+		   	border-left:none;
+		   	border-right:none;
+		   }
+		   .kefu{
+		   	width: 1200px;
+		   	height: 106px;
+		   	margin: 0 auto;
+		   }
+		   .kefu img{
+		   	width: 1200px;
+		   	height: 106px;
+		   }
+		   .dibu-box{
+		   	width: 100%;
+		   	height: 200px;
+		   	background: #f3f3f3;
+		   	
+		   }
+		   .dibu{
+		   	width: 1200px;
+		   	height: 200px;
+		   	/*border:1px solid red;*/
+		   	position: relative;
+		   	margin: 0 auto;
+		   }
+		   .dibu div{
+		   	/*border:1px solid red;*/
+		   	display: inline-block;
+		   }
+		   .dibu-1{
+		   	position: absolute;
+		   	margin-left: 20px;
+		   	margin-top: 40px;
+		   }
+		   .di{
+		   	width: 1000px;
+		   	height: 150px;
+		   	/*border:1px solid red;*/
+		   	margin-top: 30px;
+		   }
+		   .dibu-2{
+		   /*	position: absolute;
+		   	top:35px;
+		   	left: 190px;*/
+		   	font-size: 14px;
+		   	margin-left: 30px;
+		   	float: left;
+		   }
+		   .dibu-2:nth-child(1){
+		   	margin-left: 180px;
+		   }
+		   .dibu-2 h6{
+		   	margin-bottom:10px;
+            font-size: 15px;
+		   }
+		   .dibu-2 ul{
+             list-style: none;
+             margin-left: 25px;
+		   }
+		   .dibu-2 ul li {
+		   	line-height: 25px;
+		   }
+		   .dibu-2 ul li a{
+		   	text-decoration: none;
+		   	color:#494e52;
+		   	
+		   }
+		   .dibu-2 ul li a:hover{
+		   	color:#83bc0d;
+		   }
+		   .di-erweima {
+		   	width: 165px;
+		   	height: 136px;
+		   	/*border:1px solid red;*/
+		   	text-align: center;
+		   	position: absolute;
+		   	right: 65px;
+		   	top: 30px;
+		   }
+		   .di-erweima img{
+		   	width: 78px;
+		   	height: 78px;
+		   }
+		   .di-erweima h5{
+		   	font-size: 15px;
+		   }
+		   .di-erweima p{
+		   	font-size: 14px;
+		   }
+		   .zuidi-box{
+		   	width: 100%;
+		   	height: 54px;
+		   	background: #38383c;
+		    border-left:none;
+		   	border-right:none;
+		   }
+		   .zuidi{
+		   	width: 1200px;
+		   	height: 54px;
+		   	margin: 0 auto;
+		   }
+		   .zuidi p{
+		   	text-align: center;
+		   	line-height: 54px;
+		   	font-size: 12px;
+		   	color:rgba(102,102,102);
+		   }
+		   .right-fixed {
+		   	background: #2a2a2e;
+		   	height: 100%;
+		   	width: 40px;
+		   	position: fixed;
+		   	right: 0;
+		   	top:0;
+		   	/*position: relative;*/
+		   	float: left;
+		   }
+		   .fixed-1{
+		   	height: 40px;
+		   	/*background: green;*/
+		   	margin-top: 150px;
+		   	position:relative;
+		   	cursor: pointer;
+		   }
+
+		   .fixed-1 i{
+		   	margin-top: 10px;
+		   	margin-left: 10px;
+		   	display: inline-block;
+		   	width: 20px;
+		   	height: 20px;
+		   	background: url(image/jingling.PNG) no-repeat -1402px -25px;
+
+		   }
+
+		   /*.fixed-1{
+		   	width: 19px;
+		   	height: 19px;
+		   	background: url(image/jingling.PNG) no-repeat -1389px -20px;
+		  
+		   	position: absolute;
+		   	right: 2px;
+		   	top:200px;
+		   	cursor: pointer;
+		   	padding: 13px 10px;
+		   }*/
+		   .fixed-1 .fixed-1-box {
+		   	width: 80px;
+		   	height: 40px;
+		   	position: absolute;
+		   	right: 40px;
+		   	top: 0px;
+		   	line-height: 40px;
+		   	font-size: 14px;
+		   	text-align: center;
+		   	display: none;
+		   	background: #2a2a2e;
+		   	color:#fff;
+		   	cursor:pointer;
+		   }
+		   .fixed-1:hover{
+		   	background: #83bc0d;
+		   }
+		   
+		   .fixed-1:hover .fixed-1-box{
+           animation: dun 0.3s ease ;
+           display: block;
+		   }
+		   @keyframes dun {
+		   	from{transform: translate(-60px);}
+		   	to{transform:rotate(-25deg);}
+		   }
+		   .fixed-2 {
+		   	height: 150px;
+		   /*	background: green;*/
+		   	text-align: center;
+		   	margin-top: 40px;
+		   	padding-top: 20px;
+		   	cursor: pointer;
+		   }
+		    .fixed-2:hover{
+		    	background: #83bc0d;
+		    }
+		   .fixed-2 i {
+		   	/*border:1px solid red;*/
+		   	display:block;
+		   	width: 20px;
+		   	height: 20px;
+		   	background: url(image/jingling.png) no-repeat -1429px 0;
+		   	margin-left: 13px;
+		   	/*margin-top: 10px;*/
+		   }
+		   .fixed-2 span {
+		   	display: block;
+		   	padding: 0 3px
+		   	min-width:14px;
+		   	width: 20px;
+		   	height: 20px;
+		   	line-height: 20px;
+		   	border-radius:10px;
+		   	background: #83bc0d;
+		   	color:#fff;
+		   	margin-left: 10px;
+		   	/*text-align: center;*/
+
+		   }
+		   .fixed-2 a{
+		   	margin-top: 15px;
+		   /*	margin-left: 10px;*/
+		   color:#fff;
+		   text-decoration: none;
+		   line-height: 30px;
+		   font-size: 14px;
+		   }
+		   .fixed-3{
+		   	border:1px solid #2e2e2a;
+		   	height: 40px;
+		   	/*background: green;*/
+		   	margin-top: 20px;
+		   	position: relative;
+		   	cursor: pointer;
+		   }
+		   .fixed-3 i{
+		   	display: block;
+            width: 20px;
+            height: 20px;
+            background: url(image/jingling.PNG) no-repeat -1429px -26px;
+            margin-top: 10px;
+            margin-left: 10px;
+		   }
+		   .fixed-3 .fixed-3-box {
+		   	width: 80px;
+		   	height: 40px;
+		   	position: absolute;
+		   	right: 39px;
+		   	top: 1px;
+		   	line-height: 40px;
+		   	font-size: 14px;
+		   	text-align: center;
+		   	display: none;
+		   	background: #2a2a2e;
+		   	color:#fff;
+		   	cursor:pointer;
+		   }
+		   .fixed-3:hover{
+		   	background: #83bc0d;
+		   }
+		   
+		   .fixed-3:hover .fixed-3-box{
+          animation: dun 0.3s ease;
+          display: block;
+		   }
+
+
+
+		    .fixed-4{
+		   	border:1px solid #2e2e2a;
+		   	height: 40px;
+		   	/*background: green;*/
+		   	margin-top: 10px;
+		   	position: relative;
+		   	cursor: pointer;
+		   }
+		   .fixed-4 i{
+		   	display: block;
+            width: 20px;
+            height: 20px;
+            background: url(image/jingling.PNG) no-repeat -1455px 0px;
+            margin-top: 10px;
+            margin-left: 10px;
+		   }
+		   .fixed-4 .fixed-3-box {
+		   	width: 80px;
+		   	height: 40px;
+		   	position: absolute;
+		   	right: 39px;
+		   	top: 1px;
+		   	line-height: 40px;
+		   	font-size: 14px;
+		   	text-align: center;
+		   	display: none;
+		   	background: #2a2a2e;
+		   	color:#fff;
+		   	cursor:pointer;
+		   }
+		   .fixed-4:hover{
+		   	background: #83bc0d;
+		   }
+		   
+		   .fixed-4:hover .fixed-3-box{
+          animation: dun 0.3s ease;
+          display: block;
+		   }
+
+		    .fixed-5{
+		   	border:1px solid #2e2e2a;
+		   	height: 40px;
+		   	/*background: green;*/
+		   	margin-top: 10px;
+		   	position: relative;
+		   	cursor: pointer;
+		   }
+		   .fixed-5 i{
+		   	display: block;
+            width: 20px;
+            height: 20px;
+            background: url(image/jingling.PNG) no-repeat -1455px -26px;
+            margin-top: 10px;
+            margin-left: 10px;
+		   }
+		   .fixed-5 .fixed-3-box {
+		   	width: 80px;
+		   	height: 40px;
+		   	position: absolute;
+		   	right: 39px;
+		   	top: 1px;
+		   	line-height: 40px;
+		   	font-size: 14px;
+		   	text-align: center;
+		   	display: none;
+		   	background: #2a2a2e;
+		   	color:#fff;
+		   	cursor:pointer;
+		   }
+		   .fixed-5:hover{
+		   	background: #83bc0d;
+		   }
+		   
+		   .fixed-5:hover .fixed-3-box{
+          animation: dun 0.5s ease;
+          display: block;
+		   }
+
+		    .fixed-6{
+		   	border:1px solid #2e2e2a;
+		   	height: 55px;
+		   	/*background: green;*/
+		   	margin-top: 10px;
+		   	position: relative;
+		   	text-align: center;
+		   	cursor: pointer;
+		   }
+		   .fixed-6:hover{
+		   	background: #83bc0d;
+		   }
+		   .fixed-6 i{
+		   	display: block;
+            width: 20px;
+            height: 20px;
+            background: url(img/00.PNG) no-repeat;
+            background-size: 100% 100%;
+            margin-top: 10px;
+            margin-left: 10px;
+		   }
+
+		   .fixed-6 a{
+		   	font-size: 12px;
+		   	color:#fff;
+		   	text-decoration: none;
+		   }
+
+
+
+
+
+            .fixed-7{
+		   	border:1px solid #2e2e2a;
+		   	height: 40px;
+		   	/*background: green;*/
+		   	margin-top:700%;
+             /*position: absolute;*/
+             /*bottom: 0;*/
+		   	position: relative;
+		   	cursor: pointer;
+		   }
+		   .fixed-7 i{
+		   	display: block;
+            width: 40px;
+            height: 40px;
+            background: url(img/0.11.png) no-repeat -6px -280px;
+            /*background-size: 100% 100%;*/
+            /*margin-top: 10px;*/
+            margin-left: 5px;
+            /*padding-left: 3px;*/
+		   }
+		   .fixed-7 .fixed-3-box {
+		   	width: 80px;
+		   	height: 40px;
+		   	position: absolute;
+		   	right: 39px;
+		   	top: 2px;
+		   	line-height: 40px;
+		   	font-size: 14px;
+		   	text-align: center;
+		   	display: none;
+		   	background: #2a2a2e;
+		   	color:#fff;
+		   	cursor:pointer;
+		   }
+		   .fixed-7:hover{
+		   	background: #83bc0d;
+		   }
+		   
+		   .fixed-7:hover .fixed-3-box{
+          animation: dun 0.3s ease;
+          display: block;
+		   }
+		  
+
+		  
+
+
+
+
+
+
+	</style>
+		
+</head>
+<body>
+	<div class="ding">
+		<div class="ding-box">
+			<div class="left-ding">
+			<span><a href="../首页/首页.html" class="shouye">首页</a>&nbsp;> &nbsp;绿色商城！<a href="" class="maijia">去买家中心</a></span>
+			<ul class="zhuce">
+				<li class="denglu"><a href="">免费注册</a></li>
+				<li><a href="">请登录</a></li>
+			</ul>
+			</div>
+
+			<div class="right-ding">
+				<ul>
+					<li class="shangcheng"><a href="">我的绿色商城</a>
+                     <div class="shangcheng-box">
+                     	<ul>
+               
+                     		<li><a href="">已买到的商品</a></li>
+                     		<li><a href="">我关注的商品</a></li>
+                     		<li><a href="">我关注的店铺</a></li>
+                     	</ul>
+                     </div>
+
+					</li>
+					<li><a href=""><em class="gouwuche"></em>购物车0件</a></li>
+					<li class="weixinduan"><a href="">微信端</a>
+                       <div class="weixinduan-box">
+                       	 <img src="image/code8cm.jpg" alt="">
+                       </div>
+					</li>
+					<li class="xiao1"><a href="">卖家中心</a>
+                     <div class="xiao1-box">
+                     	<ul>
+                     		<li><a href="">商家入驻</a></li>
+                     		<li><a href="">已卖出商品</a></li>
+                     		<li><a href="">发布商品</a></li>
+                     		<li><a href="">管理商品</a></li>
+                     	</ul>
+                     </div>
+
+					</li>
+					<li class="xiao"><a href="">客户中心</a>
+                     <div class="xiao-box">
+                     	<ul>
+                     		<li><a href="">帮助中心</a></li>
+                     		<li><a href="">稍后服务</a></li>
+                     		<li><a href="">投诉中心</a></li>
+                     	</ul>
+                     </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="logo">
+		<div class="logo-box">
+			<a href=""><img src="image/logo.1.png" alt=""></a>
+		</div>
+		<div class="input">
+			<div class="shang">
+				<a href="">商品</a>
+				
+				<ul>
+					<li><a href="">店铺</a></li>
+				</ul>
+
+			</div>
+			<input type="text" class="text" placeholder="人参">
+			<input type="submit" value="搜 索" class="submit" style="color:#fff;">
+		</div>
+		<div class="hong"><a href="">红糖</a></div>
+		<div class="erweima">
+			<a href=""><img src="image/二维码.jpg" alt=""></a>
+		</div>
+	</div>
+    
+
+    <div class="quanbu">
+    	<div class="quanbu-box">
+    		<div class="fenlei">
+    			<a href="" class="fen">全部商品分类</a>
+                <div class="neirong-box">
+    				<ul>
+    					<li class="you"><i><img src="image/pingguo.PNG" alt=""></i><a href="">优选水果</a>
+                         <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">精选水果</a></li>
+                         			<li><a href="">苹果</a></li>
+                         			<li><a href="">橙子</a></li>
+                         			<li><a href="">香蕉</a></li>
+                         			<li><a href="">小番茄</a></li>
+                         			<li><a href="">火龙果</a></li>
+                         			<li><a href="">柠檬</a></li>
+                         			<li><a href="">芒果</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">水果礼盒</a></li>
+                         			<li><a href="">水果</a></li>
+                         			<li><a href="">水果礼盒</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		<li><img src="image/y1.jpg" alt=""></li>
+                         	 		<li><img src="image/y2.jpg" alt=""></li>
+                         	 		<li><img src="image/y3.jpg" alt=""></li>
+                         	 		<li><img src="image/y4.jpg" alt=""></li>
+                         	 		<li><img src="image/y5.jpg" alt=""></li>
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+    					</li>
+    					<li><i><img src="image/shucai.PNG" alt=""></i><a href="">新鲜蔬菜</a>
+                             
+
+                              <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">鲜菌菇类</a></li>
+                         			<li><a href="">鲜香菇</a></li>
+                         			<li><a href="">蘑菇</a></li>
+                         			<li><a href="">金针菇</a></li>
+                         			<li><a href="">杏鲍菇</a></li>
+                         		
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">茄果类 &nbsp;&nbsp;</a></li>
+                         			<li><a href="">长豆角</a></li>
+                         			<li><a href="">西葫芦</a></li>
+                         			<li><a href="">西红柿</a></li>
+                         			<li><a href="">荷兰豆</a></li>
+                         			<li><a href="">黄瓜</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">叶菜类 &nbsp;&nbsp;</a></li>
+                         			<li><a href="">卷心菜</a></li>
+                         		
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">根茎类&nbsp; &nbsp;</a></li>
+                         			<li><a href="">秋葵</a></li>
+                         			<li><a href="">山药</a></li>
+                         			<li><a href="">番茄</a></li>
+                         			<li><a href="">西兰花</a></li>
+                         			<li><a href="">白萝卜</a></li>
+                         			<li><a href="">土豆</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">葱姜蒜辣</a></li>
+                         			<li><a href="">青椒</a></li>
+                         			<li><a href="">老姜</a></li>
+                         			<li><a href="">红辣椒</a></li>
+                         			<li><a href="">大蒜头</a></li>
+                         			<li><a href="">大葱</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+
+
+
+
+                         	 <div class="youright-box">
+                         	 	<h6>推 荐 品 牌</h6>
+                         	 	<ul>
+                         	 		
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+
+
+
+
+
+
+    					</li>
+    					<li><i><img src="image/tangguo.PNG" alt=""></i><a href="">休闲零食</a>
+                           
+
+                            <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">坚果干果</a></li>
+                         			<li><a href="">果仁果干</a></li>
+                         			<li><a href="">核桃核仁</a></li>
+                         			<li><a href="">坚果</a></li>
+                         			<li><a href="">开心果</a></li>
+                         			<li><a href="">蜜饯</a></li>
+                         			<li><a href="">蔬果干</a></li>
+                         			<li><a href="">杏仁</a></li>
+                         			<li><a href="">栗子</a></li>
+                         			<li><a href="">枣</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">零食小嘴</a></li>
+                         			<li><a href="">口香糖</a></li>
+                         			<li><a href="">膨化食品</a></li>
+                         			<li><a href="">巧克力</a></li>
+                         			<li><a href="">薯片</a></li>
+                         			<li><a href="">糖果</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">糕点饼干</a></li>
+                         			<li><a href="">茶点小食</a></li>
+                         			<li><a href="">蛋卷</a></li>
+                         			<li><a href="">凤梨酥</a></li>
+                         			<li><a href="">曲奇</a></li>
+                         			<li><a href="">沙琪玛</a></li>
+                         			<li><a href="">饼干</a></li>
+                         			<li><a href="">其他</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">肉干海产</a></li>
+                         			<li><a href="">海苔</a></li>
+                         			<li><a href="">海味即食</a></li>
+                         			<li><a href="">肉干肉脯</a></li>
+                         		</ul>	
+                         	</div>
+
+
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		<li><img src="image/logo_343.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_344.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_345.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_346.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_347.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_348.jpg" alt=""></li>
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+
+    					</li>
+    					<li><i><img src="image/jiushui.PNG" alt=""></i><a href="">酒水茶饮</a>
+
+                           <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">饮料 &nbsp;&nbsp;</a></li>
+                         			<li><a href="">果汁饮料</a></li>
+                         			<li><a href="">茶饮料</a></li>
+                         			<li><a href="">功能饮料</a></li>
+                         			<li><a href="">饮用水</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">酒 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                         			<li><a href="">白葡萄酒</a></li>
+                         			<li><a href="">红葡萄酒</a></li>
+                         			<li><a href="">黄酒</a></li>
+                         			<li><a href="">白酒</a></li>
+                         			<li><a href="">啤酒</a></li>
+                         			<li><a href="">香槟</a></li>
+                         			<li><a href="">其他</a></li>
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">茶 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                         			<li><a href="">袋泡茶</a></li>
+                         			<li><a href="">红茶</a></li>
+                         			<li><a href="">绿茶</a></li>
+                         			<li><a href="">普洱茶</a></li>
+                         			<li><a href="">花果茶</a></li>
+                         			<li><a href="">乌龙茶</a></li>
+                         			<li><a href="">其他</a></li>
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">牛奶 &nbsp;&nbsp;</a></li>
+                         			<li><a href="">纯牛奶</a></li>
+                         			<li><a href="">成人奶粉</a></li>
+                         			<li><a href="">低温鲜奶</a></li>
+                         			<li><a href="">脱脂低脂奶</a></li>
+                         			<li><a href="">豆奶豆浆</a></li>
+                         			<li><a href="">儿童奶</a></li>
+                         			<li><a href="">乳酸饮料</a></li>
+                         			<li><a href="">酸奶</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">饮用品&nbsp;</a></li>
+                         			<li><a href="">蜂蜜</a></li>
+                         			<li><a href="">谷物麦片/a></li>
+                         			<li><a href="">黑糖</a></li>
+                         			<li><a href="">咖啡</a></li>
+                         			<li><a href="">柚子茶</a></li>
+                         			<li><a href="">其他</a></li>
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">补品 &nbsp;&nbsp;&nbsp;</a></li>
+                         			<li><a href="">人参</a></li>
+                         		</ul>	
+                         	</div>
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		<li><img src="image/logo_347.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_360.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_362.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_364.jpg" alt=""></li>
+                         	 </div>
+                         </div>
+
+
+
+    					</li>
+    					<li><i><img src="image/liangshi.PNG" alt=""></i><a href="">粮油佐料</a>
+                            
+
+                             <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">米面杂粮</a></li>
+                         			<li><a href="">大米</a></li>
+                         			<li><a href="">东南亚香米</a></li>
+                         			<li><a href="">拉面方便面</a></li>
+                         			<li><a href="">面粉</a></li>
+                         			<li><a href="">面条米粉</a></li>
+                         			<li><a href="">南方大米</a></li>
+                         			<li><a href="">意大利面</a></li>
+                         			<li><a href="">杂粮</a></li>
+                         			<li><a href="">其他</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">食用油 &nbsp;</a></li>
+                         			<li><a href="">菜籽油</a></li>
+                         			<li><a href="">大豆油</a></li>
+                         			<li><a href="">橄榄油</a></li>
+                         			<li><a href="">葵花油</a></li>
+                         			<li><a href="">花生油</a></li>
+                         			<li><a href="">葡萄籽油</a></li>
+                         			<li><a href="">山茶油</a></li>
+                         			<li><a href="">玉米油</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         		<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">调味酱料</a></li>
+                         			<li><a href="">醋</a></li>
+                         			<li><a href="">料酒</a></li>
+                         			<li><a href="">风味酱</a></li>
+                         			<li><a href="">酱油香油</a></li>
+                         			<li><a href="">沙拉酱果酱</a></li>
+                         			<li><a href="">糖盐淀粉</a></li>
+                         			<li><a href="">香辛料</a></li>
+                         			<li><a href="">芝麻花生</a></li>
+                         			<li><a href="">其他</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         		<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">干货罐头</a></li>
+                         			<li><a href="">腐竹</a></li>
+                         			<li><a href="">干菜</a></li>
+                         			<li><a href="">干菌菇</a></li>
+                         			<li><a href="">酱菜</a></li>
+                         			<li><a href="">肉松鱼松</a></li>
+                         			<li><a href="">银耳木耳</a></li>
+                         			<li><a href="">其他</a></li>
+                         		</ul>	
+                         	</div>
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		<li><img src="image/logo_355.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_358.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_359.jpg" alt=""></li>
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+
+
+    					</li>
+    					<li><i><img src="image/miandian.PNG" alt=""></i><a href="">熟食面点</a>
+                          
+
+
+                           <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">面点 &nbsp; &nbsp;</a></li>
+                         			<li><a href="">包子</a></li>
+                         			<li><a href="">飞饼</a></li>
+                         			<li><a href="">馒头</a></li>
+                         			<li><a href="">面条</a></li>
+                         			<li><a href="">年糕</a></li>
+                         			<li><a href="">水饺混沌</a></li>
+                         			<li><a href="">汤圆</a></li>
+                         			<li><a href="">披萨</a></li>
+                         			<li><a href="">其他</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">豆制小菜</a></li>
+                         			<li><a href="">泡菜</a></li>
+                         			<li><a href="">素鸡素鸭</a></li>
+                         			<li><a href="">其他</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		<li><img src="image/logo_319.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_343.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_344.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_345.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_346.jpg" alt=""></li>
+                         	 		<li><img src="image/logo_348.jpg" alt=""></li>
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+
+    					</li>
+    					<li><i><img src="image/jinkou.PNG" alt=""></i><a href="">进口食品</a>
+                           
+
+                            <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">出口水果</a></li>
+                         			<li><a href="">榴莲</a></li>
+                         			<li><a href="">车厘子</a></li>
+                         			<li><a href="">柠檬</a></li>
+                         			<li><a href="">热带水果</a></li>
+                         			<li><a href="">火龙果</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">进口生鲜</a></li>
+                         			<li><a href="">进口海鲜</a></li>
+                         			<li><a href="">进口牛肉</a></li>
+                         			<li><a href="">进口羊肉</a></li>
+                         			<li><a href="">进口猪肉</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">进口饮品</a></li>
+                         			<li><a href="">牛奶</a></li>
+                         			<li><a href="">冲饮品</a></li>
+                         			<li><a href="">蔬果汁</a></li>
+                         			<li><a href="">饮料</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">进口零食</a></li>
+                         			<li><a href="">饼干糕点</a></li>
+                         			<li><a href="">巧克力</a></li>
+                         			<li><a href="">零食膨化</a></li>	
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">进口酒 &nbsp;&nbsp;</a></li>
+                         			<li><a href="">葡萄酒</a></li>
+                         			<li><a href="">洋酒</a></li>
+                         			<li><a href="">啤酒</a></li>
+                         		</ul>	
+                         	</div>
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		
+
+                         	 		<li><img src="image/logo_354.jpg" alt=""></li>
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+    					</li>
+    					<li><i><img src="image/shenghuo.PNG" alt=""></i><a href="">生活日用</a>
+
+                              <div class="you-box">
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">烹饪用具</a></li>
+                         			<li><a href="">炒锅</a></li>
+                         			<li><a href="">刀剪</a></li>
+                         			<li><a href="">珐琅锅</a></li>
+                         			<li><a href="">锅铲勺</a></li>
+                         			<li><a href="">煎锅</a></li>
+                         			<li><a href="">奶锅</a></li>
+                         			<li><a href="">烧烤用具</a></li>
+                         			<li><a href="">汤锅</a></li>
+                         			<li><a href="">压力锅</a></li>
+                         			<li><a href="">蒸锅</a></li>
+                         			<li><a href="">其他用具</a></li>
+                         		</ul>	
+                         	</div>
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">餐饮用具</a></li>
+                         			<li><a href="">杯</a></li>
+                         			<li><a href="">保鲜用具</a></li>
+                         			<li><a href="">餐具</a></li>
+                         			<li><a href="">茶具</a></li>
+                         			<li><a href="">酒具</a></li>
+                         			<li><a href="">一次性用品</a></li>
+                         			
+                         		</ul>	
+                         	</div>
+
+                         	<div class="jing-box">
+                         		<ul>
+                         			<li><a href="" class="jing">厨房配件</a></li>
+                         			<li><a href="">便利工具</a></li>
+                         			<li><a href="">净水用品</a></li>
+                         			<li><a href="">清洁用品</a></li>
+                         			<li><a href="">其他配件</a></li>	
+                         		</ul>	
+                         	</div>
+
+                         	 <div class="youright-box">
+                         	 	<h6>热 门 品 牌</h6>
+                         	 	<ul>
+                         	 		
+                         	 	</ul>
+                         	 </div>
+                         </div>
+
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+
+    		<div class="shouye-box">
+    			<a href="../首页/首页.html">首页</a>
+    			 
+    		</div>
+
+    	
+                    
+    	</div>
+    </div>
+
+
+
+    	<div class="tonglan">
+    			<!-- <div class="yuan">
+    				<span></span>
+    				<span></span>
+    				<span></span>
+    			</div> -->
+    		</div>
+
+
+
+    	<div class="da">
+    		<div class="da-box1">
+    			<a href=""><div class="box"><img src="img/1.jpg" alt=""></div></a>
+    			<a href=""><div class="box1"><img src="img/3.3.jpg" alt=""></div></a>
+    			<a href=""><div class="box2"><img src="img/2.png" alt=""></div></a>
+    		</div>
+    		<h3>人气单品 <span style="font-weight: 400; margin-left: 40px; font-size: 16px;">Popular ltem</span></h3>
+    		<div class="da-box2">
+    			<a href=""><div class="box2-1"><!-- <img src="img/5.jpg" alt=""> --></div>
+    			<a href=""><div class="box2-2"><!-- <img src="img/6.jpg" alt=""> --></div></a>
+    			<a href=""><div class="box2-3"><!-- <img src="img/3.jpg" alt=""> --></div></a>
+    			<a href=""><div class="box2-4"><!-- <img src="img/4.jpg" alt=""> --></div>
+    			</a>
+    		</div>
+
+    		<div class="h3-box">
+    		<h3 class="h3-1">优选水果</h3>
+    		<a href="">默认</a>
+    		<div class="xiao">
+    			
+    		</div>
+
+               </div>
+              
+              <div class="da-box3">
+              	<div class="box3-1"><img src="img/7.jpg" alt="">
+                  <div class="box3-1-a"><a href="">苹果</a></div>
+                  <a href=""><div class="box3-1-left"></div></a>
+                  <a href=""><div class="box3-1-right"></div></a>
+                  <div class="box3-center"></div>
+              	</div>
+              	<div class="box3-2"><img src="img/8.jpg" alt=""></div>
+              	<div class="box3-3">
+              		<div></div>
+              		<div></div>
+              		<div></div>
+              		<div></div>
+              	</div>
+              </div>
+
+              <h3 class="h3-2">新鲜蔬菜</h3>
+                <div class="da-box4">
+                	<a href=""><img src="img/9.jpg" alt=""></a>
+                </div>
+
+
+                <div class="da-box5">
+                	<div><img src="img/10.jpg" alt=""></div>
+                	<div><img src="img/10.jpg" alt=""></div>
+                	<div><img src="img/10.jpg" alt=""></div>
+                	<div><img src="img/10.jpg" alt=""></div>
+                	<div><img src="img/10.jpg" alt=""></div>
+                </div>
+
+                <div class="h3-box">
+    		<h3 class="h3-1">休闲零食</h3>
+    		<a href="">默认</a>
+    		<div class="xiao">
+    			
+    		</div>
+
+               </div>
+              
+              <div class="da-box3">
+              	<div class="box3-1"><img src="img/11.jpg" alt="">
+                  <div class="box3-1-a"><a href="">坚果炒货</a></div>
+                  <a href=""><div class="box3-1-left"></div></a>
+                  <a href=""><div class="box3-1-right"></div></a>
+                  <div class="box3-center"></div>
+              	</div>
+              	<div class="box3-2"><img src="img/12.jpg" alt=""></div>
+              	<div class="box3-3">
+              		<div><img src="img/21.jpg" alt=""></div>
+              		<div><img src="img/21.jpg" alt=""></div>
+              		<div><img src="img/21.jpg" alt=""></div>
+              		<div><img src="img/21.jpg" alt=""></div>
+              	</div>
+              </div>
+
+
+
+
+              <h3 class="h3-2">酒水茶饮</h3>
+                <div class="da-box4">
+                	<a href=""><img src="img/13.jpg" alt=""></a>
+                </div>
+
+
+                <div class="da-box5">
+                	<div><img src="img/14.jpg" alt=""></div>
+                	<div><img src="img/15.jpg" alt=""></div>
+                	<div><img src="img/16.png" alt=""></div>
+                	<div><img src="img/10.jpg" alt=""></div>
+                	<div><img src="img/10.jpg" alt=""></div>
+                </div>
+
+                <div class="h3-box">
+    		<h3 class="h3-1">休闲零食</h3>
+    		<a href="">默认</a>
+    		<div class="xiao">
+    			
+    		</div>
+
+               </div>
+              
+              <div class="da-box3">
+              	<div class="box3-1"><img src="img/17.jpg" alt="">
+                  <div class="box3-1-a"><a href="">坚果炒货</a></div>
+                  <a href=""><div class="box3-1-left"></div></a>
+                  <a href=""><div class="box3-1-right"></div></a>
+                  <div class="box3-center"></div>
+              	</div>
+              	<div class="box3-2"><img src="img/18.jpg" alt=""></div>
+              	<div class="box3-3">
+              		<div><img src="img/19.jpg" alt=""></div>
+              		<div><img src="img/20.jpg" alt=""></div>
+              		<div><img src="img/21.jpg" alt=""></div>
+              		<div><img src="img/21.jpg" alt=""></div>
+              	</div>
+              </div>
+
+    
+    	</div>
+
+
+    	<!-- ********************* 底部开始 ****************** -->
+
+             <div class="kefu-box">
+              <div class="kefu">
+              	<img src="img/22.jpg" alt="">
+              </div>
+
+             </div>
+
+
+
+
+    	 <div class="dibu-box">
+             	<div class="dibu">
+             		<div class="dibu-1"><img src="img/333.PNG" alt=""></div>
+             	<div class="di">
+             		<div class="dibu-2">
+             			
+             			<ul>
+             				<h6>购物指南</h6>
+             				<li><a href="">购物流程图</a></li>
+             				<li><a href="">会员介绍</a></li>
+             				<li><a href="">常见问题</a></li>
+             				<li><a href="">联系客服</a></li>
+             			</ul>
+             		</div>
+
+
+
+             		<div class="dibu-2">
+             			
+             			<ul>
+             				<h6>店主之家</h6>
+             				<li><a href="">如何申请开店</a></li>
+             				<li><a href="">查看售出商品</a></li>
+             				<li><a href="">如何添加和删除客服</a></li>
+             				<li><a href="">如何添加产品推荐</a></li>
+             			</ul>
+             		</div>
+
+
+             		<div class="dibu-2">
+             			
+             			<ul>
+             				<h6>支付方式</h6>
+             				<li><a href="">微信付款</a></li>
+             				<li><a href="">如何注册支付宝</a></li>
+             			</ul>
+             		</div>
+
+
+
+             		<div class="dibu-2">
+             			
+             			<ul>
+             				<h6>售后服务</h6>
+             				<li><a href="">退换货流程</a></li>
+             				<li><a href="">退款申请</a></li>
+             				<li><a href="">退换货政策</a></li>
+             			</ul>
+             		</div>
+
+
+             		<div class="dibu-2">
+             			
+             			<ul>
+             				<h6>关于我们</h6>
+             				<li><a href="">联系我们</a></li>
+             				<li><a href="">合作及洽谈</a></li>
+             				<li><a href="">关于绿色食品商城</a></li>
+             			</ul>
+             		</div>
+
+             	</div>
+             	<div class="di-erweima">
+             		<img src="img/444.PNG" alt="">
+             		 <h5>扫码关注</h5>
+             		 <p>绿色商城官方微信</p>
+             	</div>
+             </div>
+             	</div>
+
+
+
+
+
+             	<div class="zuidi-box">
+                <div class="zuidi">
+                	<p>Copyright © 2017 - 2018 Ketwo. All Rights Reserved</p>
+                </div>
+             		
+             	</div>
+
+
+         <div class="right-fixed">
+         	<div class="fixed-1">
+         		<i></i>
+         		<a href=""><div class="fixed-1-box">个人中心</div></a>
+         	</div>
+
+
+         	<div class="fixed-2">
+         		<i></i>
+         		<a href="">购<br>物<br>车</a>
+         		<span>0</span>
+
+         	</div>
+
+
+         	<div class="fixed-3">
+         		<i></i>
+         		<a href=""><div class="fixed-3-box">资产中心</div></a>
+         	</div>
+
+
+         	<div class="fixed-4">
+         		<i></i>
+         		<a href=""><div class="fixed-3-box">关注商品</div></a>
+         	</div>
+
+
+         	<div class="fixed-5">
+         		<i></i>
+         		<a href=""><div class="fixed-3-box">浏览历史</div></a>
+         	</div>
+
+         	<div class="fixed-6">
+         		<i></i>
+         		<a href="">客服</a>
+         		<!-- <a href=""><div class="fixed-3-box">资产中心</div></a> -->
+         	</div>
+
+         	<div class="fixed-7">
+         		<i></i>
+       
+         		<a href=""><div class="fixed-3-box">返回顶部</div></a>
+         	</div>
+        
+         </div>
+
+
+
+
+
+
+</body>
+</html>

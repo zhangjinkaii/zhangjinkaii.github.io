@@ -1,0 +1,1698 @@
+* {
+	margin: 0;
+	padding: 0;
+ }
+/***********首部开始********************/
+
+	.ding-box{
+			width: 100%;
+			height: 30px;
+			border:1px solid #E0E0E0;
+			font-size: 12px;
+		}
+		.ding-box1{
+			width: 980px;
+			margin: 0 auto;
+			/*border:1px solid red;*/
+			position: relative;
+
+		}
+		.ding-box p {
+			display: inline;
+			line-height: 30px;
+			margin-left:10px;
+			font-size: 12px;
+			color: #666;
+		}
+		.ding-box a {
+			float: right;
+			
+			line-height: 30px;
+			/*margin-left: 10px;*/
+			color:#333;
+			text-decoration: none;
+			margin-right:10px;
+		}
+		.ding-box a:hover{
+			color: #666;
+		}
+		.ding-box .yi-a{
+			color: #666;
+			margin-right: 3px;
+		}
+		.ding-box .er-a{
+			color: #666;
+			margin-right: 35px;
+		}
+		.ding-box .san-a{
+			display: inline-block;
+			height: 24px;
+			background:url(img/1-1.PNG) -86px -90px;
+			padding: 0 2px ;
+			color:#fff;
+			line-height: 25px;
+			margin-top: 3px;
+		}
+		.ding-box .san-a:hover{
+			color:#f3f3f3;
+		}
+		.ding-box .xinlang {
+			position: absolute;
+			right: 50px;
+			top: 5px;
+		}
+		.logo-box {
+			width: 980px;
+			margin: 0 auto;
+			/*border:1px solid red;*/
+			font-size: 14px;
+		}
+		.logo{
+			float: left;
+		}
+		.yi-ul {
+			float: left;
+			margin-top: 10px;
+			margin-right:0;
+			padding:0 5px;
+			font-size: 13px;
+			background: url(img/logo/xian.PNG) no-repeat 0 12px;
+
+		}
+		.yi-ul:nth-child(1){
+
+		}
+		/*.yi-ul:nth-child(5){
+			padding:0;
+		
+		}*/
+		.yi-ul ul {
+			list-style: none;
+		}
+		.yi-ul ul li {
+			margin-top: 10px; 
+		}
+		.yi-ul ul a{
+			margin-left: 12px;
+			color:#666;
+			text-decoration: none;
+		}
+		.yi-ul ul a:hover{
+			color:#999;
+		}
+		.daobo {
+			width: 100%;
+			height: 36px;
+			background:url(img/1.jpg) repeat-x;
+			margin-top: 83px;
+		}
+		.daobo .daobo-box {
+			width: 980px;
+			height: 36px;
+			border:1px solid #7AAE0B;
+			border-bottom:1px solid #fff;
+			margin: 0 auto;
+			font-size: 18px;
+			line-height: 36px;
+
+		}
+		.daobo .daobo-box ul {
+			list-style: none;
+		}
+		.daobo .daobo-box ul li {
+			height: 35px;
+			width: 127px;
+			float: left;
+			background: url(img/split.jpg) no-repeat;
+		}
+		.daobo .daobo-box ul li a {
+			padding: 0 0 0 38px;
+			font-size: 16px;
+			color:#fff;
+			text-decoration: none;
+		}
+		.daobo .daobo-box ul li a:hover{
+			color:#ECDC48;
+		}
+		.input{
+			width: 210px;
+			height: 29px;
+			/*border:1px solid red;*/
+			float: right;
+			background: #fff;
+			position: relative;
+			margin-top: 3px;
+
+		}
+		.input .text{
+             width: 145px;
+             height: 22px;
+             position: absolute;
+             top: 1.5px;
+             left: 10px;
+             border:1px solid #fff;
+             /*top:3px;*/
+		}
+		.input .tijiao{
+			width: 50px;
+			height: 29px;
+			background: #7AAE0B;
+			line-height: 20px;
+			position: absolute;
+			border:1px solid #fff;
+			/*top:3px;*/
+			right: 0;
+			cursor: pointer;
+			color:#fff;
+		}
+
+/*************轮播图公共类开始******************/
+.lqq-zi-h2 {
+	color: #f8c596;
+}
+.t1 {
+	color:#F8C596;
+}
+.t2 {
+	color: #9ECDF0;
+}
+.t3 {
+	color: #94D1A9;
+}
+.t4 {
+	color: #d2bbac;
+}
+
+.t5 {
+	color: #D0ABE7;
+}
+
+.t6 {
+	color: #7BD9CD;
+}
+.t7 {
+	color: #BFBF40;
+}
+
+.js-one {
+	list-style: none;
+ 	width: 500%;
+}
+
+
+
+
+.lqqjs {
+	color: #6db4e7!important;
+	border-top: #6db4e7 3px solid;
+	/*border-bottom: #fff 1px solid;*/
+	height: 39px;
+	line-height: 39px;
+	border-right: 1px solid #f4ecdb;
+}
+.beijing {
+	color: #fff!important;
+	background: #7BD9CD;
+}
+
+
+/************轮播图公共类结束***************/
+
+
+
+
+
+
+
+
+
+/***********1-轮播部分********************/
+#lqq_da {
+	padding-top: 10px;
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 10px;
+}
+.carousel {
+	width: 760px;
+	border: 1px solid #666;
+	margin:  0px auto;
+	position: relative;
+}
+
+.carousel-inner {
+	width: 760px;
+	height: 240px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-inner ul {
+	list-style: none;
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.carousel-inner ul li {
+	float: left;
+}
+.carousel-indicator {
+	width: 120px;
+	padding:  4px 8px;
+	position: absolute;
+	margin-left: 406px;
+	left: -8%;
+	bottom: 10px;
+	cursor: pointer;
+}
+
+.indicators11 {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.indicators11:last-child {
+	margin-right: 0;
+}
+
+.active11 {
+	background: #73A40C;
+}
+
+.lqq-you {
+	padding-top: 10px;
+	width: 210px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/***********1部分结束********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********2部分开始********************/
+.floor-1 {
+	background: #fff;
+}
+.lqq-2-main {
+	overflow: hidden;
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-2-h2 {
+	height: 43px;
+	background: url(img/2-lunbo/FW_h2bg.jpg) repeat-x 0px 42px;
+}
+.lqq-2-h2 .lqq-2-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-2-you {
+	width: 500px;
+	height: 42px;
+	overflow: hidden;
+	background: url(img/2-lunbo/FW_title_story.png) repeat right top;
+	float: right;
+}
+/**********2-1开始************/
+.lqq-2-item1{
+	width: 240px;
+	height: 320px;
+	overflow: hidden;
+	float: left;
+	margin: 10px 0px;
+	position: relative;
+}
+
+
+.carousel-2 {
+	width: 240px;
+	border: 1px solid #666;
+	margin:  0px auto;
+	position: relative;
+}
+
+.carousel-inner-2 {
+	width: 240px;
+	height: 320px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-inner-2 ul {
+	list-style: none;
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.carousel-inner-2 ul li {
+	float: left;
+}
+.carousel-indicator-2 {
+	width: 120px;
+	padding:  4px 8px;
+	position: absolute;
+	margin-left: 198px;
+	left: 0%;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+.indicators2 {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #adadad;
+}
+
+.indicators2:last-child {
+	margin-right: 0;
+}
+
+.active2 {
+	width: 6px;
+	height: 7px;
+	background: #73A40C;
+}
+
+/***********2-2开始************/
+.lqq-2-item2 {
+	width: 400px;
+	height: 320px;
+	overflow: hidden;
+	float: left;
+	margin: 10px 10px 10px 10px;
+}
+.lqq-2-item2 ul li {
+	height: 106px;
+	padding: 0px 5px;
+	border-bottom: 1px dashed #d8d8d8;
+}
+.lqq-2-item2 ul li span {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-top: 5px;
+}
+.lqq-2-item2 ul li span a {
+	color: #ec8f08;
+	font-size: 14px;
+	font-weight:bolder;
+	text-decoration: none;
+}
+.lqq-2-item2 ul li p {
+	height: 60px;
+	line-height: 20px;
+	color: #a5a5a5;
+	overflow: hidden;
+	font-size: 12px;
+}
+/***********2-3开始*************/
+.lqq-2-item3 {
+	width: 310px;
+	height: 320px;
+	overflow: hidden;
+	float: left;
+	margin: 10px 0px;
+}
+.lqq-2-item3 dl {
+	margin-bottom: 10px;
+	float: left;
+}
+.lqq-2-item3 dl dt {
+	width: 98px;
+	height: 98px;
+	overflow: hidden;
+	border: 1px solid #ebebeb;
+	float: left;
+} 
+
+.lqq-2-item3 dl dd {
+	width: 200px;
+	height: 100px;
+	overflow: hidden;
+	padding: 0px 5px;
+	float: left;
+}
+.lqq-2-item3 dl dd span {
+	height: 30px;
+	line-height: 30px;
+}
+.lqq-2-item3 dl dd span a {
+	font-size: 12px;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #888;
+}
+.lqq-2-item3 dl dd p {
+	height: 60px;
+	line-height: 20px;
+	color: #a5a5a5;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***********3部分开始********************/
+.floor-2 {
+	background: #fff;
+}
+.lqq-3-main {
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-3-fool {
+	width: 660px;
+	height: 394px;
+	float: left;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+.lqq-3-h2 .lqq-3-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.more {
+	width: 40px;
+	height: 7px;
+	margin: 24px 12px 0px 0px;
+	overflow: hidden;
+	background: url(img/3-xiaotu/FW_ico_bj.png) repeat 0px -309px;
+	float: right;
+}
+
+
+/**********3-1开始************/
+.zh-nan2 {
+	overflow: hidden;
+	width: 980px;
+	margin: 0 auto;
+	padding: 10px 0 20px 0 ;
+	background:url(img/2-lunbo/FW_h2bg.jpg) repeat-x ;
+}
+.nan-2 {
+	float: left;
+	width: 240px;
+
+}
+.nan-2 p {
+	display: inline-block;
+	font-size: 14px;
+	padding: 10px 0;
+
+}
+.nan-3 {
+	float: left;
+	width: 390px;
+	height: 350px;
+
+}
+.nan-3 li {
+	padding-left:20px;
+	width: 390px;
+	height: 30px;
+	line-height: 30px;
+	margin-left:10px;
+	float: left;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	background: url(img/dian.gif) no-repeat 9px 15px;
+}
+.nan-3 li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #666;
+	vertical-align: middle;
+}
+.nan-d li{
+	width: 240px;
+	height: 34px;
+	line-height: 30px;
+	margin-left:10px;
+	float: left;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.nan-d li a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #666;
+}
+/***********3-2开始************/
+.lqq-3-item2 {
+	width: 400px;
+	height: 320px;
+	overflow: hidden;
+	float: left;
+	margin: 4px 10px 10px 10px;
+}
+.lqq-3-item2 ul li {
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px 0px 24px;
+	font-size: 1px;
+	background: url(img/logo/dian.gif) no-repeat 12px 14px;
+	margin-bottom: 3px;
+
+}
+.lqq-3-item2 ul li a {
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+}
+/***********3-3开始*************/
+.lqq-3-item3 {
+	width: 310px;
+	height: 394px;
+	float: left;
+	background: #fff;
+	position: relative;
+	top: -106%;
+	left: 99%;
+}
+.lqq-3-item3-h4 {
+	width: 310px;
+	height: 43px;
+	cursor: pointer;
+	margin: 2px 10px 10px 10px;
+	background: url(img/3-xiaotu/FW_ico_bj.png) repeat-x 0px 42px;
+}
+.abc {
+	font-size: 16px !important;
+	color: #6db4e7 !important;
+	border-top: #6db4e7 2px solid;
+	border-right: 1px solid #f4ecdb;
+}
+.active7{
+	float: left;
+	color: #999;
+	font-size: 14px;
+	margin-left: 10px;
+	height: 39px;
+	line-height: 39px;
+	background: #fff !important;
+}
+.lqq-3-yincang {
+	width: 310px;
+	/*overflow: hidden;*/
+	position: relative;
+}
+.tiao {
+	width: 310px;
+	height: 320px;
+	margin-top: 10px;
+}
+.lqq-3-you {
+	margin-left: 10px;
+	padding-top: 5px;
+}
+.lqq-3-you ul {
+	margin-top: -14px;
+	display: block;
+	position: relative;
+	background: url(img/3-xiaotu/FW_ico_bj.png) no-repeat -12px -1px;
+}
+.lqq-3-you2 {
+	margin-top: -10px;
+	margin-left: 17px;
+	width: 400px;
+	position: absolute;
+	top:0;
+	display: none;
+}
+.lqq-3-you li {
+	width: 400px;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 35px;
+	list-style: none;
+
+	
+}
+.lqq-3-you2 li {
+	list-style: none;
+	padding-top: 9px;
+	margin-left: spx;
+	background: url(img/logo/dian.gif) no-repeat 0px 20px;
+}
+.b{
+	display: block !important;
+}
+.lqq-3-you a,.lqq-3-you2 a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #666;
+
+}
+.lqq-3-you2 a  {
+	margin-left: 10px;
+}
+.show2{
+	display: none;
+}
+.lqq-3-tu {
+	margin-top: -20px;
+	margin-left: 20px;
+	width: 310px;
+	height: 40px;
+}
+
+
+
+
+
+
+
+/***********4部分开始********************/
+
+.lqq-4-tu {
+	margin: 10px auto;
+	width: 980px;
+	margin-top: 10px;
+}
+.lqq-4-tu img {
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/***********5部分开始********************/
+.floor-5 {
+	background: #fff;
+}
+.lqq-5-main {
+	overflow: hidden;
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-5-h2 {
+	height: 43px;
+	background: url(img/2-lunbo/FW_h2bg.jpg) repeat-x 0px 42px;
+}
+.lqq-5-h2 .lqq-5-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-5-you {
+	width: 500px;
+	height: 42px;
+	overflow: hidden;
+	background: url(img/2-lunbo/FW_title_story.png) no-repeat 0px -40px;
+	float: right;
+}
+
+.lqq-5-item1{
+	width: 310px;
+	height: 160px;
+	overflow: hidden;
+	float: left;
+	margin: 10px 10px 10px 5px;
+	position: relative;
+}
+
+
+.carousel-5 {
+	width: 310px;
+	border: 1px solid #666;
+	margin:  0px auto;
+	position: relative;
+}
+
+.carousel-inner-5 {
+	width: 310px;
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-inner-5 ul {
+	list-style: none;
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.carousel-inner-5 ul li {
+	float: left;
+}
+.carousel-indicator-5 {
+	width: 120px;
+	padding:  4px 8px;
+	position: absolute;
+	margin-left: 296px;
+	left: -9%;
+	bottom: -2px;
+	cursor: pointer;
+}
+
+.indicators5 {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #adadad;
+}
+
+.indicators5:last-child {
+	margin-right: 0;
+}
+
+.active5 {
+	background: #73A40C;
+	width: 6px;
+	height: 7px;
+}
+
+
+
+.carousel-5two {
+	width: 310px;
+	border: 1px solid #666;
+	margin:  0px auto;
+	position: relative;
+}
+
+.carousel-inner-5two {
+	width: 310px;
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-inner-5two ul {
+	list-style: none;
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.carousel-inner-5two ul li {
+	float: left;
+}
+.carousel-indicator-5two {
+	width: 120px;
+	padding:  4px 8px;
+	position: absolute;
+	margin-left: 296px;
+	left: -9%;
+	bottom: -2px;
+	cursor: pointer;
+}
+
+.indicators5two {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #adadad;
+	/*margin-right: 10px;*/
+}
+
+.indicators5two:last-child {
+	margin-right: 0;
+}
+
+.active5two {
+	background: #73A40C;
+	width: 6px;
+	height: 7px;
+}
+
+
+
+
+.carousel-5three {
+	width: 310px;
+	border: 1px solid #666;
+	margin:  0px auto;
+	position: relative;
+}
+
+.carousel-inner-5three {
+	width: 310px;
+	height: 160px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-inner-5three ul {
+	list-style: none;
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.carousel-inner-5three ul li {
+	float: left;
+}
+.carousel-indicator-5three {
+	width: 120px;
+	padding:  4px 8px;
+	position: absolute;
+	margin-left: 296px;
+	left: -9%;
+	bottom: -2px;
+	cursor: pointer;
+}
+
+.indicators5three {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #adadad;
+}
+
+.indicators5three:last-child {
+	margin-right: 0;
+}
+
+.active5three {
+	background: #73A40C;
+	width: 6px;
+	height: 7px;
+}
+
+/***********5的下部分开始************/
+.lqq-5-main-left {
+	width: 960px;
+	height: 260px;
+	margin: 0px 10px;
+	float: left;
+	overflow: hidden;
+}
+.lqq-5-main-left ul {
+	width: 310px;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+
+.lqq-5-main-left ul li {
+	width: 250px;
+	height: 66px;
+	padding: 10px 0px 10px 60px;
+	position: relative;
+	border-bottom: 1px dashed #f1f1f1;
+}
+.lqq-5-main-head {
+	width: 48px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+.lqq-5-main-head a{
+	color: #666;
+	text-decoration: none;
+	border: 0;
+	font-size: 14px;
+}
+.lqq-5-main-head .lqq-5-main-fav {
+	width: 46px;
+	height: 16px;
+	line-height: 16px;
+	display: block;
+	background: #fbf8f0;
+	border: 1px solid #f4ecdb;
+	overflow: hidden;
+	text-align: center;
+	color: #6fc48e;
+	font-size: 14px;
+}
+.lqq-5-main-left ul li h5 {
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+}
+.lqq-5-main-left ul li h5 a {
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-5-main-left ul li p {
+	color: #999;
+	line-height: 20px;
+	font-size: 12px;
+}
+.lqq-5-main-left ul li p a{
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+	border: 0;
+}
+
+
+
+
+
+
+
+
+/***********6部分开始********************/
+.floor-6 {
+	background: #fff;
+}
+.lqq-6-main {
+	overflow: hidden;
+	width: 980px;
+	height: 390px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-6-fool {
+	float: left;
+	overflow: hidden;
+	display: block;
+}
+.lqq-6-h2 {
+	width: 980px;
+	height: 43px;
+	background: url(img/2-lunbo/FW_h2bg.jpg) repeat-x 0px 42px;
+}
+.lqq-6-h2 .lqq-6-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-6-you {
+	width: 500px;
+	height: 42px;
+	overflow: hidden;
+		float: right;
+	background: url(img/2-lunbo/FW_title_story.png) repeat 0px -82px;
+
+}
+/**********6-1开始************/
+.lqq-6-item1{
+	width: 240px;
+	height: 320px;
+	/*overflow: hidden;*/
+	float: left;
+	margin: 10px 0px;
+	position: relative;
+}
+.carousel-6 {
+	width: 240px;
+	border: 1px solid #666;
+	margin:  0px auto;
+	position: relative;
+}
+
+.carousel-inner-6 {
+	width: 240px;
+	height: 320px;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-inner-6 ul {
+	list-style: none;
+	width: 300%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.carousel-inner-6 ul li {
+	float: left;
+}
+.carousel-indicator-6 {
+	width: 120px;
+	padding:  4px 8px;
+	position: absolute;
+	margin-left: 198px;
+	left: 0%;
+	bottom: 0px;
+	cursor: pointer;
+}
+
+.indicators6 {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background: #adadad;
+}
+
+.indicators6:last-child {
+	margin-right: 0;
+}
+
+.active6 {
+	background: #73A40C;
+	width: 6px;
+	height: 7px;
+}
+
+.lqq-6-main-left {
+	width: 350px;
+	height: 320px;
+	margin: 9px 10px 0 9px;
+	float: left;
+	overflow: hidden;	
+}
+.lqq-6-main-head {
+	width: 77px;
+	height: 77px;
+	float: right;
+}
+.lqq-6-main-left ul {
+	width: 350px;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.lqq-6-main-left ul li {
+	width: 350px;
+	height: 81px;
+	padding: 0px 80px 4px 10px;
+	border-left: 1px dashed #eee;
+}
+.lqq-6-main-left ul li h5 {
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+}
+.lqq-6-main-left ul li h5 a {
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-6-main-left ul li p {
+	width: 350px;
+	height: 81px;
+	color: #999;
+	line-height: 20px;
+	font-size: 12px;
+}
+.lqq-6-main-left ul li p a{
+	font-size: 12px;
+	color: #D0ABE7;
+	text-decoration: none;
+	border: 0;
+}
+
+
+
+
+
+
+
+
+/***********7部分开始********************/
+
+.lqq-7-tu {
+	margin: 0px auto;
+	width: 980px;
+	/*padding-left: -10px;*/
+}
+.lqq-7-tu img {
+	margin-left: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***********8部分开始********************/
+
+.floor-8 {
+	background: #fff;
+}
+.lqq-8-main {
+	overflow: hidden;
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-8-h2 {
+	height: 43px;
+	background: url(img/2-lunbo/FW_h2bg.jpg) repeat-x 0px 42px;
+}
+.lqq-8-h2 .lqq-8-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-8-you {
+	width: 500px;
+	height: 42px;
+	overflow: hidden;
+	background: url(img/2-lunbo/FW_title_story.png) no-repeat 0px -126px;
+	float: right;
+} 
+ /*我的生活我做主，小资生活走起 ---开始*/
+#nine{
+	width: 980px;
+	height: 570px;
+	margin:  0 auto;
+	position: relative;
+}
+
+/*主食小吃*/
+#nine .nine-one{
+	clear: both;
+	position: absolute;
+	left: 195px;
+}
+#nine .nine-one .box{
+	position: relative;
+	display: inline-block;
+	margin:10px 12px 0 0;
+}
+#nine .one {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: 10px;
+	right: 795px;
+	background: url(img/8-tu/main.jpg) 0px 0px  no-repeat;
+}
+#nine p{
+	width: 180px;
+	height: 100px;
+	background-color:rgba(66,66,66,.5);
+	position: absolute;
+	top: 80px;
+	text-align: center;
+}
+#nine span{
+	color: #fff;
+	font-size: 12px;
+	font-weight: lighter;
+}
+#nine a{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+#nine p{
+	display: none;
+}
+#nine .nine-one .box:hover p{
+	display: block;
+
+}
+
+
+/*烘焙甜点*/
+#nine .nine-two {
+	position: absolute;
+	top:190px;
+	left: 195px;
+}
+#nine .two {
+	top: 10px;
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	right: 795px;
+	background: url(img/8-tu/main.jpg) 0px -180px  no-repeat;
+}
+#nine .nine-two .box{
+	display: inline-block;
+	margin:10px 12px 0 0;
+}
+#nine .nine-two .box:hover p{
+	display: block;
+
+}
+#nine .nine-two p{
+	top: 90px;
+}
+
+/*糖水饮品*/
+#nine .nine-three {
+	position: absolute;
+	top:380px;
+	left: 195px;
+	clear: both;
+		/*overflow: hidden;*/
+}
+#nine .three {
+	top: 10px;
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	right: 795px;
+	background: url(img/8-tu/main.jpg) 0px -360px  no-repeat;
+}
+#nine .nine-three .box{
+	display: inline-block;
+	margin:10px 12px 0 0;
+}
+#nine .nine-three .box:hover p{
+	display: block;
+
+}
+#nine .nine-three p{
+	top: 90px;
+}
+ /*我的生活我做主，小资生活走起 ---结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********9部分开始********************/
+.floor-2 {
+	background: #fff;
+}
+.lqq-9-main {
+	height: 350px;
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.lqq-9-fool {
+	float: left;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+
+/******9-1开始*************/
+.lqq-9-h2 {
+	width: 330px;
+	float: left;
+	overflow: hidden;
+	height: 43px;
+	background: url(img/2-lunbo/FW_h2bg.jpg) repeat-x 0px 42px;
+}
+.lqq-9-h2 .lqq-9-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.more {
+	width: 40px;
+	height: 7px;
+	margin: 24px 12px 0px 0px;
+	overflow: hidden;
+	background: url(img/3-xiaotu/FW_ico_bj.png) repeat 0px -309px;
+	float: right;
+}
+
+/********9-2-2开始************/
+.lqq-9-item2-2 {
+	width: 300px;
+	overflow: hidden;
+	position: relative;
+	top: -618px;
+	left: 338px;
+}
+.lqq-9-item2-2 ul li {
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px 0px 24px;
+	color: #989898;
+	font-size: 1px;
+	margin-bottom: 3px;
+	background: url(img/logo/dian.gif) no-repeat 12px 14px;
+}
+.lqq-9-item2-2 ul li a {
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+}
+
+/*********9-1-3*****************/
+.lqq-9-item9 {
+	width: 310px;
+	float: left;
+}
+.lqq-9-item9-h4 {
+	width: 350px;
+	height: 43px;
+	overflow: hidden;
+	background: url(img/3-xiaotu/FW_ico_bj.png) repeat-x 0px 42px;
+}
+.lqq-9-js {
+	width: 120px;
+	height: 42px;
+	line-height: 42px;
+	color: #999;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+.lqq-9-h5 {
+	overflow: hidden;
+	width: 206px;
+	 height: 43px; 
+	border-bottom: #f4ecdb 1px solid;
+	text-align: right;
+}
+.lqq-9-h5 a {
+	padding: 2px 5px;
+	font-size: 12px;
+	font-weight: lighter;
+	text-decoration: none;
+	position: relative;
+	top: 20px;
+	margin-right: 10px;
+	color: #999;
+}
+.lqq-js {
+	color: #7BD9CD;
+	border-top: #7BD9CD 3px solid;
+	border-bottom: #fff 1px solid;
+	height: 39px;
+	line-height: 39px;
+	border-right: 1px solid #f4ecdb;
+}
+.lqq-9-you {
+	padding-top: 10px;
+}
+.lqq-9-you ul {
+	display: block;
+	position: relative;
+	background: url(img/3-xiaotu/FW_ico_bj.png) no-repeat -12px -5px;
+}
+.lqq-9-you ul li {
+	/*width: 400px;*/
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 35px;
+	list-style: none;
+}
+.lqq-9-you ul li a {
+	color: #666;
+	font-size: 12px;
+	text-decoration: none;
+}
+.lqq-3-tu {
+	width: 310px;
+	height: 40px;
+}
+.lqq-9-main-left {
+	width: 330px;
+	height: 320px;
+	overflow: hidden;	
+	position: relative;
+	top: -300px;
+	left: 0px;
+}
+.lqq-9-main-head {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+.lqq-9-main-left ul {
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.lqq-9-main-left ul li {
+	width: 320px;
+	height: 70px;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin-bottom: 6px;
+}
+.lqq-9-main-left ul li h5 {
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+.lqq-9-main-left ul li h5 a {
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.lqq-9-main-left ul li p {
+	color: #999;
+	line-height: 20px;
+	font-size: 12px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+.lqq-9-main-left ul li p a{
+	font-size: 12px;
+	color: #7BD9CD;
+
+	text-decoration: none;
+}
+
+
+
+/************10开始******************/
+.floor-2 {
+	background: #fff;
+}
+.lqq-10-main {
+	/*height: 350px;*/
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-10-fool {
+	float: left;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+.lqq-10-h2 {
+	width: 980px;
+	float: left;
+	overflow: hidden;
+	height: 43px;
+	background: url(img/2-lunbo/FW_h2bg.jpg) repeat-x 0px 42px;
+}
+.lqq-10-h2 .lqq-10-zuo {
+	padding-left: 10px;
+	height: 42px;
+	line-height: 42px;
+	float: left;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.more {
+	width: 40px;
+	height: 7px;
+	margin: 24px 12px 0px 0px;
+	overflow: hidden;
+	background: url(img/3-xiaotu/FW_ico_bj.png) repeat 0px -309px;
+	float: right;
+}
+
+
+
+/*********11开始*************/
+
+.floor-2 {
+	background: #fff;
+}
+.lqq-11-main {
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.lqq-11-fool {
+	width: 980px;
+	height: 68px;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+.lqq-11-fool ul {
+	float: left;
+}
+.lqq-11-fool ul li {
+	height: 20px;
+	overflow: hidden;
+	margin: 0px 10px 15px 10px;
+	float: left;
+}
+.lqq-11-fool ul li .zi1 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bolder;
+	padding: 1px 5px 3px 5px;
+
+}
+.lqq-11-fool ul li a {
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+
+/***********12部分开始********************/
+
+.lqq-12-tu {
+	margin: 0 auto;
+	width: 980px;
+	height: 90px;
+}
+.lqq-12-tu img {
+	width: 980px;
+	height: 90px;
+}
+
+
+
+
+
+
+
+/****************尾部开始********************/
+ 
+
+.foot-new{
+	width: 980px;
+	margin: 10px auto 0;
+	font-size: 12px;
+	color: #666;
+}
+.foot-new ul {
+	margin-left: 20%;
+	list-style: none;
+	text-align: center;
+}
+
+.foot-new ul li{
+	float: left;
+	margin-left: 10px;
+}
+.foot-new  .one1,
+	.one2,.one3
+	{
+		text-align: center;
+	}
+.foot-new  a{
+	text-decoration: none;
+	color: #666;
+}
+
+.foot-new  a:hover{
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

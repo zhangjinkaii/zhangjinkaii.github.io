@@ -1,0 +1,197 @@
+
+/********************我要发布*********************/
+.gxx-fabu {
+	float: right;
+	position: fixed;
+	right: 0;
+	top:39%;
+}
+.gxx-fabu a {
+	text-decoration: none;
+	color:#fff;
+	background: #83BC0D;
+	padding: 10px;
+}
+/************************分享*****************************/
+.gxx-fenxiang {
+	float: right;
+	position: fixed;
+	right: 0;
+	top:43%;
+	cursor: pointer;
+}
+.gxx-fenxiang p{
+	width: 30px;
+	text-align: center;
+	color: #fff;
+	background:#83BC0D;
+	padding: 10px 5px;
+	border-bottom-left-radius:20%;
+	border-top-left-radius:20%;  
+	float: left;
+	margin-top: 120px;
+}
+.yincang {
+	float: right;
+	width: 250px;
+	height: 340px;
+	border: 2px solid #666;
+	border-bottom-left-radius:2%; 
+	border-top-left-radius:2%; 
+	border-right:hidden; 
+	display: none;
+	position: relative;
+	background: #f0f0f0;
+	font-size: 12px;
+}
+.gxx-fenxiang:hover .yincang{
+	display: block;
+}
+.gxx-fenxiang-top {
+	width: 100%;
+	height: 20px;
+	color: #666;
+	padding-left: 10px;
+	background: #e0e0e0;
+	line-height: 20px;
+	/*border-bottom: 1px solid  #e0e0e0;*/
+}
+.gxx-fenxiang-top span {
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;
+	color: #666;
+}
+.gxx-fenxiang-top a:hover {
+
+	text-decoration: underline;
+}
+.gxx-fenxiang-top span:hover {
+	text-decoration: underline;
+}
+.gxx-fenxiang-main {
+	width: 100%;
+	height: 60px;
+	/*border: 1px solid #ccc;*/
+}
+.yincang .gxx-fenxiang-main span {
+	display: inline-block;
+	text-align: center;
+	padding-top: 35px;
+	margin: 5px 18px;
+	position: relative;
+}
+.yincang .gxx-fenxiang-main em {
+	width: 28px;
+	height: 20px;
+	position: absolute;
+	bottom: 20px;
+	transform: scale(1.5);
+}
+.gxx-fenxiang-main .gxx-jingling1 {
+	background: url(分享图片/fenxiang.png) no-repeat 12px -1510px;
+}
+.gxx-fenxiang-main .gxx-jingling2 {
+	background: url(分享图片/fenxiang.png) no-repeat 12px -286px;
+}
+.gxx-fenxiang-main .gxx-jingling3 {
+	background: url(分享图片/fenxiang.png) no-repeat 12px -1726px;
+}
+.gxx-fenxiang-left {
+	float: left;
+	width: 80px;
+	padding-left: 30px;
+	position: relative;
+}
+.gxx-fenxiang-left li,.gxx-fenxiang-right li {
+	list-style: none;
+	padding-top: 15px;
+	/*padding-left: 5px;*/
+}
+.yincang .gxx-fenxiang-left em {
+	width: 28px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+}
+.gxx-fenxiang-left .gxx-jingling4 {
+	background: url(分享图片/fenxiang.png) no-repeat 9px -1564px;
+}
+.gxx-fenxiang-left .gxx-jingling5 {
+	background: url(分享图片/fenxiang.png) no-repeat 9px -1798px;
+}
+.gxx-fenxiang-left .gxx-jingling6 {
+	margin-left: 10px;
+	background: url(分享图片/xinhuamb.png) no-repeat;
+}
+.gxx-fenxiang-left .gxx-jingling7 {
+	background: url(分享图片/fenxiang.png) no-repeat 9px -1708px;
+}
+.gxx-fenxiang-left .gxx-jingling8 {
+	background: url(分享图片/fenxiang.png) no-repeat 9px -1330px;
+}
+.gxx-fenxiang-left .gxx-jingling9 {
+	background: url(分享图片/fenxiang.png) no-repeat 9px -1006px;
+}
+.gxx-fenxiang-left .gxx-jingling10 {
+	background: url(分享图片/fenxiang.png) no-repeat 9px -538px;
+}
+.gxx-fenxiang-right {
+	float: right;
+	width: 100px;
+	position: relative;
+}
+.gxx-fenxiang-right li {
+	padding-left: 28px;
+}
+.yincang .gxx-fenxiang-right em {
+	width: 28px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+}
+.gxx-fenxiang-right .gxx-jingling11 {
+	background: url(分享图片/fenxiang.png) no-repeat 3px -2069px;
+}
+.gxx-fenxiang-right .gxx-jingling12 {
+	background: url(分享图片/fenxiang.png) no-repeat 3px -1636px;
+}
+.gxx-fenxiang-right .gxx-jingling13 {
+	background: url(分享图片/fenxiang.png) no-repeat 3px -1889px;
+}
+.gxx-fenxiang-right .gxx-jingling14 {
+	background: url(分享图片/fenxiang.png) no-repeat 3px -916px;
+}
+.gxx-fenxiang-right .gxx-jingling15 {
+	background: url(分享图片/fenxiang.png) no-repeat 3px -1546px;
+}
+.gxx-fenxiang-right .gxx-jingling16 {
+	margin-left: 2px;
+	background: url(分享图片/weixin.png) no-repeat;
+}
+.gxx-fenxiang-right .gxx-jingling17 {
+	margin-left: 2px;
+	background: url(分享图片/qqim.png) no-repeat;
+}
+.gxx-fenxiang-bottom {
+	float: left;
+	width: 100%;
+	height: 20px;
+	color: #666;
+	padding-left: 10px;
+	margin-top: 20px;
+	background: #e0e0e0;
+	line-height: 20px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.gxx-fenxiang-bottom-left {
+	float: left;
+} 
+.gxx-fenxiang-bottom-right {
+	float: right;
+	margin-right: 30px;
+}
+.gxx-fenxiang-bottom-right:hover {
+	text-decoration: underline;
+}

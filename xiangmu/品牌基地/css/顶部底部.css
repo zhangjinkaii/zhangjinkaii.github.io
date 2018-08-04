@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.ding-box{
+	width: 100%;
+	height: 30px;
+	border:1px solid #E0E0E0;
+	font-size: 12px;
+	background: #fff;
+}
+.ding-box1{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.ding-box p {
+	display: inline;
+	line-height: 30px;
+	margin-left:10px;
+	font-size: 12px;
+	color: #666;
+}
+.ding-box a {
+	float: right;
+	line-height: 30px;
+	color:#333;
+	text-decoration: none;
+	margin-right:10px;
+}
+.ding-box a:hover{
+	color: #666;
+}
+.ding-box .yi-a{
+	color: #666;
+	margin-right: 3px;
+}
+.ding-box .er-a{
+	color: #666;
+	margin-right: 35px;
+}
+.ding-box .san-a{
+	display: inline-block;
+	height: 25px;
+	background: #F22840;
+	padding: 0 2px ;
+	color:#fff;
+	line-height: 25px;
+	margin-top: 2px;
+}
+.ding-box .san-a:hover{
+	color:#f3f3f3;
+}
+.ding-box .xinlang {
+	position: absolute;
+	right: 50px;
+	top: 5px;
+}
+.logo-box {
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.logo{
+	float: left;
+}
+.yi-ul {
+	float: left;
+	margin-top: 10px;
+	margin-right:0;
+	padding:0 5px;
+	font-size: 13px;
+	background: url(./../img/imgs/xian.PNG) no-repeat 0 12px;
+
+}
+.yi-ul:nth-child(1){
+
+}
+
+.yi-ul ul {
+	list-style: none;
+}
+.yi-ul ul li {
+	margin-top: 10px; 
+}
+.yi-ul ul a{
+	margin-left: 12px;
+	color:#666;
+	text-decoration: none;
+}
+.yi-ul ul a:hover{
+	color:#999;
+}
+.daobo {
+	width: 100%;
+	height: 36px;
+	background: #7AAE0B;
+	margin-top: 4px;
+}
+.daobo .daobo-box {
+	width: 980px;
+	height: 36px;
+	border:1px solid #7AAE0B;
+	border-bottom:1px solid #fff;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 36px;
+
+}
+.daobo .daobo-box ul {
+	list-style: none;
+}
+.daobo .daobo-box ul li {
+	width: 127px;
+	float: left;
+	background: url(./../img/imgs/lvxian.jpg) no-repeat;
+}
+.daobo .daobo-box ul li a {
+	padding: 0 0 0 38px;
+	font-size: 16px;
+	color:#fff;
+	text-decoration: none;
+}
+.daobo .daobo-box ul li a:hover{
+	color:#ECDC48;
+}
+.input{
+	width: 210px;
+	height: 29px;
+	float: right;
+	background: #fff;
+	position: relative;
+	margin-top: 3px;
+
+}
+.input .text{
+     width: 145px;
+     height: 22px;
+     position: absolute;
+     top: 1.5px;
+     left: 10px;
+     border:1px solid #fff;
+}
+.input .tijiao{
+	width: 50px;
+	height: 29px;
+	background: #7AAE0B;
+	line-height: 20px;
+	position: absolute;
+	border:1px solid #fff;
+	right: 0;
+	cursor: pointer;
+	color:#fff;
+}
+ 
+       
+
+
+.foot-new{
+	width: 980px;
+	margin: 10px auto 0;
+	font-size: 12px;
+	color: #666;
+}
+.foot-new ul {
+	margin-left: 20%;
+	list-style: none;
+	text-align: center;
+}
+
+.foot-new ul li{
+	float: left;
+	margin-left: 10px;
+}
+.foot-new  .one1,
+	.one2,.one3
+	{
+		text-align: center;
+	}
+.foot-new  a{
+	text-decoration: none;
+	color: #666;
+}
+.foot-new  a:hover{
+	text-decoration: underline;
+	color: #000;
+}
+

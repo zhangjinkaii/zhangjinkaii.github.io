@@ -1,0 +1,382 @@
+/*清零*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*整体页面背景颜色*/
+body{
+	background: #F0F0F0;
+}
+/*顶部背景颜色*/
+#top{
+	background-color: #fff;
+}
+
+/*wftnav里的span公共属性*/
+.span{
+	color: #999;
+	font-size: 12px;
+	position: absolute;
+	bottom:  10px;
+}
+.span2{
+ 	border: 1px solid #7AAE0B;
+	color: #7AAE0B;
+	padding: 4px 6px;
+	font-size: 12px;
+	position: absolute;
+	bottom:  10px;
+	right: 25px;
+	cursor: pointer;
+}
+/*所有img的属性*/
+#boy img{
+	margin: 10px;
+}
+
+/*整个boy盒子的属性*/
+#boy{
+	width: 980px;
+	height: 1440px;
+	margin: 10px auto ;
+	overflow: hidden;
+}
+
+
+/*魏凤婷导航栏开始*/
+#wftnav{
+	border-top: 2px solid #669900;
+	width: 980px;
+	height: 42px;
+	line-height: 42px;;
+	font-size: 12px;
+	margin: 10px auto 0;
+	background: #F5F5F5;
+	color: #666666;
+}
+#wftnav_ul{
+	list-style: none;
+}
+#wftnav_ul li{
+	float: left;
+	margin-left: 15px;;
+}
+#wftnav_ul li a{
+	color: #999999;
+	text-decoration: none;
+}
+#wftnav_ul li a:hover{
+	color: #7BAF0C;
+}
+#wftnav #address{
+	text-decoration: none;
+	color: #666666;
+	margin-left: 10px;
+}
+#wftnav #btn{
+	padding:  0 10px;
+	color: #666666;
+}
+#wftnav #sear {
+	height: 22px;
+	width: 230px;
+}
+
+
+/*第一个页面的所有内容开始*/
+#wftmain{
+	width: 100%;
+	height: 1432px;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+#wftmain .one{
+	background: #fff;
+	width: 460px;
+	height: 168px;
+	margin: 10px;
+	position: relative;
+	border: 1px solid  #F0F0F0;
+}
+#wftmain .one:hover{
+	border: 1px solid  #7AAE0B;
+}
+/* wftmain中box中公共属性*/
+
+#wftmain  .lf{
+	position: absolute;
+	left: 230px;;
+	width: 221px;
+	height: 140px;
+	top: 28px;
+}
+#wftmain a{
+	font-size: 18px;
+	color: #666;
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	margin-left: 10px;
+}
+#wftmain a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+#wftmain .one  p ,.two  p{
+	color: #999;
+	font-size: 12px;
+	position: absolute;
+	left: 20px;
+	line-height: 18px;
+	padding-top: 20px;
+}
+ 
+#wftmain .span2:hover{
+	background-color:#7AAE0B;
+	color: #fff;
+}
+/* wftmain中box中公共属性*/
+
+#wftmain .two{
+	width: 460px;
+	height: 168px;
+	position: relative;
+	background: #fff;
+	margin: 10px;
+	clear: both;
+	float: right;
+	margin-top:-180px;
+	border: 1px solid  #F0F0F0;
+}
+#wftmain .two:hover{
+	border: 1px solid  #7AAE0B;
+}
+/*第一个页面的所有内容结束*/
+
+#page{
+	margin-top:44px;
+	width: 980px;
+	height: 62px;
+	padding: 20px 0 0 0;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom:  3px solid #7BAF0C;
+}
+#page span{
+	color: #224f86;
+	padding: 4px 7px;
+	border: 1px solid #999;
+	margin-left: 5px;
+}
+#page .span2,.span3{
+	padding: 4px 10px;
+}
+#page a{
+	text-decoration: none;
+	color: #2272B1;
+}
+#page span:hover{
+	border: 1px solid #7AAE0B;
+	color:#666;
+}
+
+#page .active{
+	font-weight: bold;
+	color: #fff;
+	background-color: #7AAE0B;
+}
+
+#page .active:hover{
+	color: #fff;
+}
+
+/* wftmain中box中公共属性*/
+
+/*第二页面开始*/
+#wftsecond{
+	width: 100%;
+	height: 1432px;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+#wftsecond .one{
+	background: #fff;
+	width: 460px;
+	height: 168px;
+	margin: 10px;
+	position: relative;
+	border: 1px solid  #F0F0F0;
+}
+#wftsecond .one:hover{
+	border: 1px solid  #7AAE0B;
+}
+/* wftsecond中box中公共属性*/
+
+#wftsecond  .lf{
+	position: absolute;
+	left: 230px;
+	width: 221px;
+	height: 140px;
+	top: 28px;
+}
+#wftsecond a{
+	font-size: 18px;
+	color: #666;
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	margin-left: 10px;
+}
+#wftsecond a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+#wftsecond .one  p ,.two  p{
+	color: #999;
+	font-size: 12px;
+	position: absolute;
+	left: 20px;
+	line-height: 18px;
+	padding-top: 20px;
+}
+ 
+#wftsecond .span2:hover{
+	background-color:#7AAE0B;
+	color: #fff;
+}
+/* wftsecond中box中公共属性*/
+
+#wftsecond .two{
+	width: 460px;
+	height: 168px;
+	position: relative;
+	background: #fff;
+	margin: 10px;
+	clear: both;
+	float: right;
+	margin-top:-180px;
+	border: 1px solid  #F0F0F0;
+}
+#wftsecond .two:hover{
+	border: 1px solid  #7AAE0B;
+}
+/*第二页面结束*/
+
+
+/*第三页面开始*/
+#wftlast{
+	width: 100%;
+	height: 1432px;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+#wftlast .one{
+	background: #fff;
+	width: 460px;
+	height: 168px;
+	margin: 10px;
+	position: relative;
+	border: 1px solid  #F0F0F0;
+}
+#wftlast .one:hover{
+	border: 1px solid  #7AAE0B;
+}
+/* wftlast中box中公共属性*/
+
+#wftlast  .lf{
+	position: absolute;
+	left: 230px;;
+	width: 221px;
+	height: 140px;
+	top: 28px;
+}
+#wftlast a{
+	font-size: 18px;
+	color: #666;
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	margin-left: 10px;
+}
+#wftlast a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+#wftlast .one  p ,.two  p{
+	color: #999;
+	font-size: 12px;
+	position: absolute;
+	left: 20px;
+	line-height: 18px;
+	padding-top: 20px;
+}
+ 
+#wftlast .span2:hover{
+	background-color:#7AAE0B;
+	color: #fff;
+}
+/* wftlast中box中公共属性*/
+
+#wftlast .two{
+	width: 460px;
+	height: 168px;
+	position: relative;
+	background: #fff;
+	margin: 10px;
+	clear: both;
+	float: right;
+	margin-top:-180px;
+	border: 1px solid  #F0F0F0;
+}
+#wftlast .two:hover{
+	border: 1px solid  #7AAE0B;
+}
+/*第三页面结束*/
+
+
+/*点击页面发生变化*/
+
+
+/*右边分享属性开始*/
+#share #issue{
+	background-color: #83BC0D;
+	color: #fff;
+	padding: 10px 10px;
+	font-size: 18px; 
+	position: fixed; 
+	right: 0;
+    top: 300px; 
+	text-decoration: none;
+}
+#share #fenxiang{
+	padding: 10px 0 ;
+	width: 28px;
+	background-color: #83BC0D;
+	color: #f7fdd3;
+	position: fixed; 
+	right: 0;
+	top: 345px;
+	height: 60px;
+	cursor: wait;
+}
+#share .fen{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px 6px;
+}
+
+#share #fenxiang img{
+	width: 200px;
+	margin-top: 20px;
+	position: relative;
+	right:172px; 
+	display: none;
+}
+#share #fenxiang:hover img{
+	display: block;
+}
+/*右边分享属性结束*/
+
+
+

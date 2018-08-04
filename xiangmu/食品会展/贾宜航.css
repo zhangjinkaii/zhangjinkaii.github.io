@@ -1,0 +1,39 @@
+
+
+
+#page{
+	margin-top:44px;
+	width: 980px;
+	height: 62px;
+	padding: 20px 0 0 0;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom:  3px solid #7BAF0C;
+}
+#page span{
+	color: #224f86;
+	padding: 4px 7px;
+	border: 1px solid #999;
+	margin-left: 5px;
+}
+#page span{
+	padding: 4px 10px;
+}
+#page a{
+	text-decoration: none;
+	color: #2272B1;
+}
+#page span:hover{
+	border: 1px solid #7AAE0B;
+	color:#666;
+}
+
+#page .active{
+	font-weight: bold;
+	color: #fff;
+	background-color: #7AAE0B;
+}
+
+#page .active:hover{
+	color: #fff;
+}

@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./自销自产.css">
+</head>
+<body>
+	<div class="ding-box">
+		<div class="ding-box1">
+		<p>全面动员，关注健康，关注绿色食品。 2018-07-31 星期二 农历戊戌[狗]年六月十九</p>
+		  <a href="" class="san-a">加关注</a>  <a href="" class="er-a">登录</a> <a href="" class="yi-a">注册</a>  
+		  <a href=""><div class="xinlang"><img src="image/xinlang.PNG" alt=""></div></a>
+		</div>
+	</div>
+	<div class="logo-box">
+		<div class="logo"><img src="image/logo.jpg" alt=""></div>
+			<div class="yi-ul" style="background: #fff; padding-left:0; ">
+				<ul>
+					<li>
+						<a href=""><strong>新闻</strong></a>
+						<a href="">科技</a>
+						<a href="">趣闻</a>
+						<a href="">食安</a>
+					</li>
+					<li>
+						<a href="">曝光</a>
+						<a href="">热点</a>
+						<a href="">观点</a>
+						<a href="">政策</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="yi-ul">
+				<ul>
+					<li>
+						<a href=""><strong>指南</strong></a>
+						<a href="">科技</a>
+						<a href="">趣闻</a>
+						<a href="">食安</a>
+					</li>
+					<li>
+						<a href="">曝光</a>
+						<a href="">热点</a>
+						<a href="">观点</a>
+						<a href="">政策</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="yi-ul">
+				<ul>
+					<li>
+						<a href=""><strong>产业</strong></a>
+						<a href="">科技</a>
+						<a href="">趣闻</a>
+						<a href="">食安</a>
+					</li>
+					<li>
+						<a href="">曝光</a>
+						<a href="">热点</a>
+						<a href="">观点</a>
+						<a href="">政策</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="yi-ul">
+				<ul>
+					<li>
+						<a href=""><strong>新闻</strong></a>
+						<a href="">科技</a>
+						<a href="">趣闻</a>
+						<a href="">食安</a>
+					</li>
+					<li>
+						<a href="">曝光</a>
+						<a href="">热点</a>
+						<a href="">观点</a>
+						<a href="">政策</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="yi-ul">
+				<ul>
+					<li>
+						<a href="" ><strong>Show</strong></a>
+						<a href=""> 问答</a>	
+					</li>
+					<li>
+						<a href="">论坛</a>
+						<a href="" style="margin-left: 21px;">共建</a>
+					</li>
+				</ul>
+			</div>
+	</div>
+	<div class="daobo">
+		<div class="daobo-box">
+			<ul>
+				<li><a href="./../首页/首页.html">首&nbsp;&nbsp;&nbsp;页</a></li>
+				<li><a href="../美食天下/美食天下.html">美食天下</a></li>
+				<li><a style="color:#ECDC48;" href="../自产自销/自销自产2.html">自产自销</a></li>
+				<li><a href="../品牌基地/品牌基地.html">品牌基地</a></li>
+				<li><a href="../食品会展/1.html">食品会展</a></li>
+				<li><a href="../商城/2.html" target="_blank">商&nbsp;&nbsp;&nbsp;城</a></li>
+			</ul>
+			<div class="input">
+				<input style="color: #666;" type="text" class="text" value="请输入关键字" onfocus="if(this.value=='请输入关键字')this.value=''" onblur="if(this.value=='') {this.value = '请输入关键字';}"> 
+				<input type="submit" value="搜 索" class="tijiao">
+			</div>
+		</div>
+		
+	</div>
+
+  <div class="gxx">
+  	<!-- ******************************自产自销轮播图****************************** -->
+	<div class="gxx-carousel">
+	<div class="gxx-carousel-inner">
+		<ul>
+			<li><img src="image/轮播1.jpg" alt=""></li>
+			<li><img src="image/轮播2.jpg" alt=""></li>
+			<li><img src="image/轮播1.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div class="gxx-carousel-indicators">
+		<span class="gxx-indicator active"></span>
+		<span class="gxx-indicator"></span>
+		
+	</div>
+	</div>
+   <script src="自产自销.js"></script>
+    <script>
+      	var dian = document.getElementsByClassName('gxx-indicator');
+      	var imgBox = document.getElementsByClassName('gxx-carousel-inner')[0].getElementsByTagName('ul')[0];
+      	var len = dian.length;
+      	var count = 1;
+      	var interval=0;
+
+      	imgBox.onmouseover = function() {
+      		clearInterval(interval);
+      	}
+      	imgBox.onmouseout = function() {
+      		autoplay();
+      	}
+      	function autoplay() {
+      		interval = setInterval(function(){
+					count = count > 1 ? 0 : count;
+						for(var j = 0; j<len;j++) {
+      				dian[j].className=dian[j].className.replace('active','').trim();//链式调用
+      			}
+      			var offset = - count * 980;
+      			animate2(imgBox,offset);
+      				dian[count].className += ' active';
+						console.log(count);
+					count++;
+      		},3000);
+      	}; 
+      	autoplay();
+
+      	for(var i = 0 ; i<len; i++) {
+      		dian[i].myindex = i;
+      		dian[i].onmouseover = function () {
+      			for(var j = 0; j<len;j++) {
+      				dian[j].className=dian[j].className.replace('active','').trim();//链式调用
+      			}
+      			var offset = -this.myindex * 980;
+      			animate2(imgBox,offset);
+      			this.className += ' active';
+      		};
+      	}
+    </script>
+    
+
+  <!-- **************************左边区域***************************** -->
+
+	<div class="main">
+		<ul>
+		  <div class="gxx-main-left">
+		      	<li>
+		      	 <img src="./image/左32.jpg" alt="屏山茵红李">
+		         <h3>[四川特产屏山水果]屏山甜枇杷产地直供 量大</h3>
+		         <p>标签：四川特产 屏山蜂糖李 屏山茵红李 屏山五月脆 富硒水果分类：屏山</p>
+		         <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		         <p class="zi2">联系地址：四川省宜宾市屏山县电商产业园104</p>
+		         <p class="zi3">四川省</p>
+		       	</li>
+		        <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+				
+		  <div class="gxx-main-left">
+		     <li>
+		     		<img src="./image/左33.jpg" alt="屏山李子">
+		       <h3>[四川特产屏山李子]屏山茵红李、蜂糖李、五月脆 现摘现发 产地直供</h3>
+		       <p>标签：四川特产 屏山蜂糖李 屏山茵红李 屏山五月脆 富硒水果分类：屏山</p>
+		       <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		       <p class="zi2">联系地址：四川省宜宾市屏山县电商产业园104</p>
+		       <p class="zi3">四川省</p>
+		     </li>
+		     <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		     <li>
+		     		<img src="./image/左34.jpg" alt="四川李子">
+		       <h3>[四川特产屏山水果]屏山甜枇杷 现摘现发 产地直供</h3>
+		       <p>标签： 屏山水果 屏山枇杷 富硒水果 分类：屏山</p>
+		       <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		       <p class="zi2">联系地址：四川省宜宾市屏山县电商产业园104</p>
+		       <p class="zi3">四川省</p>
+		     </li>
+		     <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		     <li>
+		     		<img src="./image/左36.jpg" alt="芹菜">
+		       <h3>芹菜</h3>
+		       <p>温室大棚种植芹菜预计2月10日上市 </p>
+		       <p class="zi1">联系人：徐少国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：15226013003</p>
+		       <p class="zi2">联系地址：河南省开封市开封县陈留镇六里庄村</p>
+		       <p class="zi3">河南省</p>
+		     </li>
+		     <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左6.jpg" alt="四川特产">
+		      <h3>【四川特产】屏山富硒不知火</h3>
+		      <p>标签： 屏山水果 屏山不知火 分类： 屏山农特产 果子名称：屏山不知火</p>
+		      <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+		  <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左6.jpg" alt="四川特产">
+		      <h3>【四川特产】屏山富硒不知火</h3>
+		      <p>标签： 屏山水果 屏山不知火 分类： 屏山农特产 果子名称：屏山不知火</p>
+		      <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左38.jpg" alt="四川特产">
+		      <h3>四川特产屏山富硒不知火</h3>
+		      <p>四川特产屏山富硒不知火/丑柑 批发零售 产地直供</p>
+		      <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+			   <li>
+			   		<img src="./image/左39.jpg" alt="水果博览会">
+			     <h3>2018广州·世界水果博览会</h3>
+			     <p>展会时间：2018年6.27-29日 展会地点：广州。广交会展馆 展会官网</p>
+			     <p class="zi1">联系人：李倩文 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18620023689</p>
+			     <p class="zi2">联系地址：广东省广州市市辖区科学城科学大道中100号科汇三街4号4楼</p>
+			     <p class="zi3">广东省</p>
+			   </li>
+			   <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		 		<li>
+		 	  <img src="./image/左40.jpg" alt="猪肉">
+		      <h3>旬邑特产黑猪肉</h3>
+		      <p>黑猪肉，纯粮食喂养 价格：49元/斤 5斤起送</p>
+		      <p class="zi1">联系人：王先生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：13519140154</p>
+		      <p class="zi2">联系地址：陕西省咸阳市旬邑县县城</p>
+		      <p class="zi3">四川省</p>
+		  		</li>
+		     <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		      <img src="./image/左41.jpg" alt="四川宜宾屏山椪柑">
+		      <h3>四川宜宾屏山椪柑批发零售</h3>
+		      <p>四川宜宾屏山优质苹果产地直销，批发零售</p>
+		      <p class="zi1">联系人：刘兰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县金沙江大道西段370号</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+			   <li>
+			   		<img src="./image/左42.jpg" alt="椪柑 芦柑">
+			     <h3>椪柑 芦柑 产地直销</h3>
+			     <p>椪柑是我们日常生活中最常见的水果之一，口感香甜</p>
+			     <p class="zi1">联系人：李朗旭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+			     <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+			     <p class="zi3">四川省</p>
+			   </li>
+			   <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+			   <li>
+			   		<img src="./image/左6.jpg" alt="2018中国糖果零食展">
+			     <h3>2018中国糖果零食展</h3>
+			     <p>2018中国高端食品展暨中国糖果零食展（春季）订于4月26-28日在厦门国际会展中心举行</p>
+			     <p class="zi1">联系人：周鸣涛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：13910380084</p>
+			     <p class="zi2">联系地址：北京市市辖区丰台区南二环方庄芳古路日月天地大厦B座207室</p>
+			     <p class="zi3">北京市</p>
+			   </li>
+			   <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左6.jpg" alt="2018中国冰淇淋冷食展">
+		      <h3>2018中国冰淇淋冷食展</h3>
+		      <p>2018中国冷冻食品展暨中国冰淇淋冷食展将于1月12-14日在中国国际展览中心举行</p>
+		      <p class="zi1">联系人：周鸣涛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：13910380084</p>
+		      <p class="zi2">联系地址：北京市市辖区丰台区南二环方庄芳古路日月天地大厦B座207室</p>
+		      <p class="zi3">北京市</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左43.jpg" alt="2018北京国际酒店用品展">
+		      <h3>2018北京国际酒店用品展</h3>
+		      <p>第八届北京国际酒店用品博览会（2018恒辉酒店展），将于2018年7月5-7日移师中国国际展览中心（静安庄馆）举办</p>
+		      <p class="zi1">联系人：刘航&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：13522660727</p>
+		      <p class="zi2">联系地址：北京市市辖区朝阳区北京市朝阳区北三环东路6号</p>
+		      <p class="zi3">北京市</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		     <li>
+		     		<img src="./image/左6.jpg" alt="河南种鸽肉鸽养殖繁殖基地">
+		       <h3>河南种鸽肉鸽养殖繁殖基地</h3>
+		       <p>终身教技术 包回收 保售后 事实说话 合同办事</p>
+		       <p class="zi1">联系人：阎虹宏 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18135607768</p>
+		       <p class="zi2">联系地址：河南省驻马店市新蔡县南湖扶贫产业基地</p>
+		       <p class="zi3">河南省</p>
+		     </li>
+		     <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左44.jpg" alt="椪柑芦柑 新鲜水果">
+		      <h3>椪柑芦柑 新鲜水果</h3>
+		      <p>椪柑又名芦柑、白橘,是一种营养丰富的果品，具有果大皮薄，色泽鲜艳、肉质脆嫩</p>
+		      <p class="zi1">联系人：李朗旭 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18682593879</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左45.jpg" alt="紫丹香露桑葚酒">
+		      <h3>屏山椪柑 产地直销</h3>
+		      <p>椪柑是我们日常生活中最常见的水果之一，口感香甜</p>
+		      <p class="zi1">联系人：李朗旭 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18682593879</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+			<div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左46.jpg" alt="紫丹香露桑葚酒">
+		      <h3>古味鲜豆包</h3>
+		      <p>豆包，是从豆浆上揭起的结皮，以7-10公分距离一层层卷叠好，再切成方形</p>
+		      <p class="zi1">联系人：黄小婷  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：13805923259</p>
+		      <p class="zi2">联系地址：福建省泉州市南安市梅山镇鼎城工业区28号 海特机械</p>
+		      <p class="zi3">福建省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左6.jpg" alt="养鸽致富 唯有豫宏！！ ！">
+		      <h3>养鸽致富 唯有豫宏！！ ！</h3>
+		      <p>常年出售优质种鸽 包回收 教技术 保售后 。合同办事 事实说话联系电话 18135607768</p>
+		      <p class="zi1">联系人：阎虹宏  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18135607768</p>
+		      <p class="zi2">联系地址：河南省驻马店市新蔡县南湖扶贫产业基地 河南豫宏禽业</p>
+		      <p class="zi3">河南省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		 	<div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左47.jpg" alt="大枣">
+		      <h3>哪里能够买到便宜的新疆大枣</h3>
+		      <p>“一份价钱一分货”质量同价格都是对等的。如果想买便宜的新疆大枣，建议到干果批发市场购买，减少零售环节，这样价格会比超市、干果店价格便宜很多</p>
+		      <p class="zi1">联系人：任枣园 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18237416310</p>
+		      <p class="zi2">联系地址：新疆维吾尔自治区巴音郭楞蒙古自治州若羌县尝尝想枣园</p>
+		      <p class="zi3" style="left: 90%;">新疆维吾尔</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左48.jpg" alt="大枣">
+		      <h3>新疆和田大枣真伪的鉴别方式</h3>
+		      <p>新疆和田大枣通体呈红色，果面无褶皱，个头大，口感略带苦味 枣农直销</p>
+		      <p class="zi1">联系人：李锋 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18237416310</p>
+		      <p class="zi2">联系地址：新疆维吾尔自治区巴音郭楞蒙古自治州库尔勒市新疆 巴音郭楞自治区（库尔勒市） 若羌县 尝尝想枣园</p>
+		      <p class="zi3" style="left: 90%;">新疆维吾尔</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		 	<div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左6.jpg" alt="河南种鸽 肉鸽养殖">
+		      <h3>河南种鸽 肉鸽养殖</h3>
+		      <p>河南豫宏禽业常年出售优质鸽种，终身免教技术 包回收 保售后，诚信做人 合同办事。</p>
+		      <p class="zi1">联系人：阎虹宏  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18135607768</p>
+		      <p class="zi2">联系地址：河南省驻马店市新蔡县河南省驻马店市新蔡县南湖扶贫产业基地</p>
+		      <p class="zi3">河南省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左49.jpg" alt="若羌灰枣和红枣的区别">
+		      <h3>若羌灰枣和红枣的区别</h3>
+		      <p>枣园诚邀广大红枣经销商来园参观看枣，并向每一位枣园的经销商做出：“红枣质量我把关，经营销售你来管”的承诺</p>
+		      <p class="zi1">联系人：李锋 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18237416310</p>
+		      <p class="zi2">联系地址：新疆维吾尔自治区巴音郭楞蒙古自治州库尔勒市新疆 巴音郭楞自治区（库尔勒市） 若羌县 尝尝想枣园</p>
+		      <p class="zi3" style="left: 90%;">新疆维吾尔</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		   <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左50.jpg" alt="优质鸽子蛋">
+		      <h3>河南种鸽 肉鸽养殖 优质鸽子蛋</h3>
+		      <p>养鸽子的请往这里看 ，豫宏种鸽  优质品种 教技术 包回收 保售后 常年出售 </p>
+		      <p class="zi1">联系人：阎虹宏  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18135607768</p>
+		      <p class="zi2">联系地址：河南省驻马店市新蔡县河南省驻马店市新蔡县南湖扶贫产业基地 河南豫宏禽业</p>
+		      <p class="zi3">河南省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左51.jpg" alt="变蛋">
+		      <h3>变蛋</h3>
+		      <p>中国古典医学典籍《医林篆要》中介绍，变蛋“味辛涩甘咸，寒。”，可“泻肺热，醒酒，去大肠火，治泻痢。能散、能敛。”</p>
+		      <p class="zi1">联系人：明月 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：13750952534</p>
+		      <p class="zi2">联系地址：河南省洛阳市洛龙区洛龙区</p>
+		      <p class="zi3">河南省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左52.jpg" alt="家庭肉鸽">
+		      <h3>河南种鸽 家庭肉鸽 蔡王鸽</h3>
+		      <p>河南豫宏禽业常年出售优质鸽种 教技术包回收 保售后 欢饮各地朋友实地考察，联系电话：18135607768，</p>
+		      <p class="zi1">联系人：阎虹宏 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18135607768</p>
+		      <p class="zi2">联系地址：河南省驻马店市新蔡县河南省驻马店市新蔡县南湖街道 南湖社区扶贫产业基地 河南豫宏禽业</p>
+		      <p class="zi3">河南省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    		<img src="./image/左53.jpg" alt="屏山大量塔罗科血橙出售">
+		      <h3>屏山大量塔罗科血橙出售</h3>
+		      <p>【屏山农特产】屏山大量塔罗科血橙出售 果子名称：屏山塔罗科血橙</p>
+		      <p class="zi1">联系人：李朗旭  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县屏山镇</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左54.jpg" alt="新鲜水果四川屏山椪柑批发零售">
+		      <h3>新鲜水果四川屏山椪柑批发零售</h3>
+		      <p>[屏山椪柑]屏山椪柑批发零售 标签： 屏山水果 屏山椪柑 椪柑 芦柑 </p>
+		      <p class="zi1">联系人：李朗旭  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县屏山镇</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		 <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左55.jpg" alt="屏山富硒不知火/丑柑 批发零售">
+		      <h3>屏山富硒不知火/丑柑 批发零售</h3>
+		      <p>不知火批发联系方式：18161082197 、18688893947 Q Q/微信：5818650  </p>
+		      <p class="zi1">联系人：李朗旭  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：18688893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+		  <div class="gxx-main-left">
+		    <li>
+		    	<img src="./image/左6.jpg" alt="屏山富硒塔罗科血橙出售">
+		      <h3>屏山富硒塔罗科血橙出售</h3>
+		      <p>[屏山农特产]屏山富硒塔罗科血橙出售 产地直供 批发联系方式：18161082197  </p>
+		      <p class="zi1">联系人：李朗旭 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系方式：1868893947</p>
+		      <p class="zi2">联系地址：四川省宜宾市屏山县四川省宜宾市屏山县新县城宾石路屏山电商产业园</p>
+		      <p class="zi3">四川省</p>
+		    </li>
+		    <hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+		  </div>
+
+ 	 </ul>
+	</div>
+
+  <!--***************************右侧区域****************************-->
+	<div class="gxx-right">
+			<div class="gxx-main-right">
+							<div style="background-color: #F7F7F7;"><h4>头条推荐</h4></div>
+							<ul>
+									<li><a href="">好柿自然来 | 风靡欧洲的西红柿罐头来到中国</a></li>
+									<li><a href="">西域果园诚邀代理加盟商！</a></li>
+									<li><a href="">义乌吴记红糖，百年传承，诚招代理！</a></li>
+									<li><a href="">青春宝人参供应厂家诚招代理</a></li>
+							</ul>
+			</div>
+			<img style="margin-top: 10px;" src="image/右2.jpg">
+
+			<div class="gxx-main-right">
+							<div style="background-color: #F7F7F7;"><h4>新闻精选</h4></div>
+										<ul>
+												<li><a href="">西域果园诚邀代理加盟商！</a></li>
+												<li><a href="">丝路酒庄诚招全国各地代理商</a></li>
+												<li><a href="">青春宝人参供应厂家诚招代理</a></li>
+												<li><a href="">2018CIHIE第24届[上海] 国际健康产业博览会</a></li>
+												<li><a href="">好柿自然来 | 风靡欧洲的西红柿罐头来到中国</a></li>
+												<li><a href="">武当红野生山葡萄干红酒</a></li>
+										</ul>
+			</div>
+			<img style="margin-top: 10px;" src="image/右3.jpg">
+			<img style="margin-top: 10px;" src="image/右4.jpg">
+
+	<!-- **************************微博区域*************************** -->			
+		<div class="wrap-gxx-weibo">
+				<div class="gxx-weibo">
+					<a class="a1" href="JavaScript:;">微博</a>
+				</div>
+
+				<div class="gxx-main-right-zhinan">
+					<img src="image/微博1.jpg" alt="绿色食品网">
+					<a class="a2" href="JavaScript:;">绿色食品指南</a>
+					<p>浙江 杭州</p>
+					<button type="buttoon"><span></span>加关注</button>
+				</div>
+
+			<div class="gxx-main-right-bowen">
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《减肥也不能忽视健康五种营养物质必须补充》不管用什么方法减肥，都不能忽视健康，而想要健康减肥，需特别注意饮食，很多减肥者都知道这点，但具体怎样做，却不了解，今天，小编告诉大家减肥时要补充的营养http://weibo.com/p/23041813803e12b0102wr96
+						</p>
+						<img src="./image/博文1.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《猪肉补铁羊肉滋补五种肉类营养大比拼》　肉中蛋白质可用牛奶、豆类来替代，但B族维生素、必需脂肪酸、锌、铁等矿物质，是无法用蔬果来替代的。因此，我们不是不要肉，而是不要过多的肉。今天小编给五种http://t.cn/RtCHkKM ​
+						</p>
+						<img src="./image/博文2.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《立秋之初暑气未退宝宝怎么吃才健康》立秋后，天气逐渐转凉，但三伏未到头，暑气未完全消退，白天仍很热。所以，立秋之初，天气仍很闷热，人易倦怠、乏力，饮食仍以防暑降温为主，但相对炎夏，要有所变化http://t.cn/Rt9W5DR ​
+						</p>
+						<img src="./image/博文3.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《食欲不振人也不精神桑拿天这样吃才精神》天气热时，皮肤排汗，使更多血液流向体表，导致消化系统供血相对减少，消化液分泌减少，消化吸收力变差，再加上人们食欲不振，造成营养素供应量下降。在高温情况http://t.cn/Rto2In0 ​ ​
+						</p>
+						<img src="./image/博文4.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《喝乌龙茶减肥一定让你瘦到尖叫》茶素有“美容”和“健美”之效，特别是乌龙茶，富含食物纤维，能增加饱腹感。但采用乌龙茶减肥，一定要注意方法，因为不科学的饮用方法会严重影响效果。针对乌龙茶减肥法http://weibo.com/p/23041813803e12b0102wqtc ​ ​ ​
+						</p>
+						<img src="./image/博文5.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《加糖熬制增加红参重量如何鉴别含糖多的红参》红参是常用的滋补品之一，补气补血，比较适合体弱的老人和妇女进补。按国家标准，红参含糖量不应超20%，然而有些商家加糖增重，使红参含糖量高达50%。http://t.cn/RtXI09x ​ ​ ​ ​
+						</p>
+						<img src="./image/博文6.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《三色果醋茶吸脂减重拒绝反弹》减肥最害怕的，不是减不下来，而是反弹！反弹后，增加的可是脂肪而不是肌肉，不健康的减肥方式会造成消化系统紊乱和新陈代谢失常。一旦减肥受挫，身体部分机能会产生各种副http://t.cn/Rti1hsJ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文7.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《感觉身体被掏空了那就多吃红豆和坚果》竞争越来越激烈，压力也不小，对年轻人来说，心累脑也累，感觉身体被掏空了，下面小编为大家介绍一下心累和脑累者应吃什么，一起看看吧。眼疲劳多吃枸杞。上班族成http://t.cn/RtJAb8k ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文8.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《夏季清凉养颜的水果干》　水果脱水后，将营养素凝缩的产物即为水果干。在水果逐渐脱水过程中，水果也从“寒性食材”转化为“温性食材”，对大多数体寒女性来说，水果干是能安心摄入的食物之一。在众多水http://t.cn/RtMYHrH ​ ​ ​ ​ ​ ​
+						</p>
+						<!-- <img src="./image/博文8.jpg" alt=""> -->
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《营养师独家清肠秘方赶紧收藏吧》夏季炎热，稍吃些油腻之物，肠胃就不舒服!小编为大家倾心推荐几款权威中医及营养师们的独家清肠秘方，赶紧收藏吧！山楂粥消脂：国家二级公共营养师许冰：山楂富含果胶，http://weibo.com/p/23041813803e12b0102wqbt ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文10.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《鸡蛋生吃还是熟吃好？揭秘鸡蛋最健康的吃法》煮鸡蛋时，很多人都会盯着时间，生怕把鸡蛋煮太熟，因为他们认为，半熟鸡蛋最营养，甚至有人喜食生鸡蛋。可如今，传言鸡蛋不能生吃，否则有害健康。鸡蛋生吃http://weibo.com/p/23041813803e12b0102wqa0 ​ ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文11.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《夏季干燥人易上火喝这些饮品降降火》夏季炎热干燥，人易上火。那么对夏季易上火的人来说，知道喝什么饮品既解渴又降火吗？其实，这几款饮品就不错。　绿豆汤：夏季，几乎家家户户都会准备些绿豆汤。绿豆http://t.cn/Rt52FrU ​ ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文12.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《鲜料搭配小火煨煲汤秘诀大公开》“煲汤”，并非番茄鸡蛋汤或青菜汤，而是用鱼类、禽类甚至是药材熬出的浓汤，不仅味道鲜美醇厚，营养也极丰富。今天小编就来与大家分享熬汤的秘诀，让您吃得营养又健康！http://t.cn/RtGRYh9 ​ ​ ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文13.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《三款食物让眼睛更明亮》眼睛是心灵之窗，一双明亮有神的眼睛不仅代表健康，还能彰显美丽。然而，现在很多人用眼不当，每天和电脑、手机朝夕相对，用眼过度是常有的事。怎样才能缓解眼疲劳，让眼睛重焕明http://t.cn/Rtvm5bV ​ ​ ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文14.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《夏季如何喝水更健康》夏天炎热，人体大量缺水，如不及时补水，便会影响肌肤，重则威胁健康。因此夏季补水很重要。但补水也不是尽情喝水就可以，也要讲究方法。喝水也会中毒，严重的甚至致命？这并非危言http://t.cn/R5spU5t ​ ​ ​ ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文15.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《五招让炒饭变得更营养》你喜欢吃炒饭吗？小编甚是喜爱。很多人认为炒饭没营养，但小编可不这么认为，只要在炒饭里多下功夫，就能让炒饭变得不一样哦，不信，往下看。1.增加食材多样性。炒饭时，不仅加http://t.cn/R5e3dYZ ​ ​ ​ ​ ​ ​ ​ ​ ​ ​
+						</p>
+						<img src="./image/博文16.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《早餐吃面包没营养？四个细节让面包更营养》上班族的早晨总是显得忙绿而紧张，很多人为多睡一会儿，就会随便应付早餐，简单吃些面包片。可大家随便应付的早餐却是我们一天中最重要的一餐，我们该如何发挥http://t.cn/R5raGPv ​ ​ ​
+						</p>
+						<img src="./image/博文17.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《夏季防暑神器绿豆：青绿、黄绿、墨绿哪种好》绿豆虽普通，但吃法有讲究。绿豆按颜色分，可分为青绿、黄绿、墨绿三种，以色浓绿、有光泽、粒大整齐者为佳。颜色太深，可能是陈货：绿豆属淀粉豆，蛋白质含http://t.cn/R51wlHw ​ ​ ​ ​
+						</p>
+						<img src="./image/博文18.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《日啖荔枝三百颗很危险如何防治荔枝中毒》这段时间，荔枝上市，一些荔枝中毒事件层出不穷。山东的李女士和她的女儿就因为吃多了荔枝被送进了医院。荔枝到底是怎样使人中毒的呢？我们应该如何预防荔枝中毒http://t.cn/R5u1HTt ​ ​ ​ ​
+						</p>
+						<img src="./image/博文20.jpg" alt="">
+						<p>
+							<a href="JavaScript:;">2016-8-10 11:29</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+						<hr style="border: 0.5px dashed #ccc; margin-top: 15px;">
+					</div>
+
+					<div class="gxx-right-neirong">
+						<p>发表了博文《最全夏日水果保鲜秘籍》爱美的girl当然要多吃水果啦！好吃没负担，且颜色鲜艳，非常适合发朋友圈晒健康生活哟哦！但你知道水果们的正确保鲜方法吗？放错的水果，不仅容易坏，还可能让其他水果也一起http://t.cn/R5muH8N ​ ​ ​ ​ ​
+						</p>
+						<!-- <img src="./image/博文19.jpg" alt=""> -->
+						<p>
+							<a href="JavaScript:;">2016-7-4 16:31</a>
+							<span class="pinglun"><a href="JavaScript:;">转发 </a> | <a href="JavaScript:;"> 评论 </a></span> 
+						</p>
+					</div>
+		
+			</div>
+		</div>
+	</div>
+<!-- ***************************下一页******************************* -->
+	<div class="gxx-page">
+		<span class="teshu"><a href="自销自产.html">上一页</a></span>
+		<span class="page1"><a href="自销自产.html">1</a></span>
+		<span class="page1 page2"><a href="JavaScript:;">2</a></span>
+		<span class="page1"><a href="自销自产3.html">3</a></span>
+		<span class="teshu"><a href="自销自产3.html">下一页</a></span>
+	</div>
+
+<!-- ******************************底部区域*************************** -->
+ <div class="foot-new">
+ 	  <img src="image/bgc1.PNG" alt="底部">
+  	   <p>
+  	   	<ul>
+	  		<li><a href="">关于我们&nbsp;|</a></li>
+	  		<li><a href="">隐私政策&nbsp;|</a></li>
+	  		<li><a href="">法律声明&nbsp;|</a></li>
+	  		<li><a href="">广告服务&nbsp;|</a></li>
+	  		<li><a href="">联系我们&nbsp;|</a></li>
+	  		<li><a href="">意见反馈&nbsp;|</a></li>
+	  		<li><a href="">人才招聘&nbsp;|</a></li>
+	  		<li><a href="">对外合作&nbsp;|</a></li>
+	  		<li><a href="">企业邮箱</a></li>
+	  	</ul>
+  	   </p> 
+	  <p class="one1" style="clear: both;">Copyright © 2013 - 2014 Ketwo. All Rights Reserved</p>
+	  <p class="one2">开拓科技 版权所有 ICP证: <a href="">浙ICP备11027203号-6</a> </p>
+	  <p class="one3">本网站由以下单位赞助：<a href="">男人婆品牌</a> <a href="">海外贸易网</a></p>
+ </div>
+
+</div>
+
+<!-- ************************我要发布******************************** -->
+	<div class="gxx-fabu">
+		<a href="JavaScript:;">我要发布</a>
+	</div>
+<!-- ***************************分享区域******************************** -->
+	<div class="gxx-fenxiang">
+		<p>分享</p>
+		<div class="yincang">
+<!-- *****************************分享头部************************************-->
+			<div class="gxx-fenxiang-top">
+				<a>分享到...</a><span>X</span>
+			</div>
+<!-- *****************************分享中间************************************-->
+			<div class="gxx-fenxiang-main">
+				<span><em class="gxx-jingling1"></em>腾讯微博</span>
+				<span><em class="gxx-jingling2"></em>一键通</span>
+				<span><em class="gxx-jingling3"></em>新浪微博</span>
+				<hr style="width:90%;margin-left: 10px;">
+			</div>
+
+			<div class="gxx-fenxiang-main1">
+				<div class="gxx-fenxiang-left">
+					<ul>
+						<li><span><em class="gxx-jingling4"></em>QQ空间</span></li>
+						<li><span><em class="gxx-jingling5"></em>搜狐新闻</span></li>
+						<li style="color: #ff5151;"><span><em class="gxx-jingling6"></em>新华微博</span></li>
+						<li><span><em class="gxx-jingling7"></em>手机</span></li>
+						<li><span><em class="gxx-jingling8"></em>网易微博</span></li>
+						<li><span><em class="gxx-jingling9"></em>开心网</span></li>
+						<li><span><em class="gxx-jingling10"></em>豆瓣网</span></li>
+					</ul>
+				</div>
+				<div class="gxx-fenxiang-right">
+					<ul>
+						<li><span><em class="gxx-jingling11"></em>手机快传</span></li>
+						<li><span><em class="gxx-jingling12"></em>人人网</span></li>
+						<li><span><em class="gxx-jingling13"></em>天涯</span></li>
+						<li><span><em class="gxx-jingling14"></em>凤凰微博</span></li>
+						<li><span><em class="gxx-jingling15"></em>朋友网</span></li>
+						<li><span><em class="gxx-jingling16"></em>微信</span></li>
+						<li><span><em class="gxx-jingling17"></em>QQ好友</span></li>
+					</ul>
+				</div>
+<!-- *****************************分享底部************************************-->
+				<div class="gxx-fenxiang-bottom">
+					<span class="gxx-fenxiang-bottom-left">更多平台...(133)</span>
+					<span class="gxx-fenxiang-bottom-right"><em style="color:#ff8000; ">b</em>Share</span>
+				</div>
+			</div>	
+			
+		</div>
+	</div>
+</body>
+</html>
