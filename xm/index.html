@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		.box{
+             width: 400px;
+             height: 400px;
+             text-align: center;
+             margin: 250px auto 0;
+             line-height: 400px;
+             cursor: pointer;
+             border-radius: 50%;
+
+		}
+		body:hover .box{
+         animation: sun 10s linear infinite;
+		}
+		.box a{
+			text-decoration: none;
+			color:#000;
+		}
+		.box .active:hover {
+         animation: dun 6s linear infinite;
+		}
+		@keyframes dun {
+		   100%{color:#f09; }
+		   95%{color:#00A2E8; }
+           90%{color:#06c;}
+           85%{color:#A90F0F;}
+           80%{color: #A249A3;}
+           75%{color: #AD26E5;}
+           70%{color:green;}
+           65%{color:#F52797;}
+           60%{color:#880015; }
+           55%{color:#5E199E; }
+           50%{color:red;}
+           45%{color:#1FA3BF;}
+           40%{color:#B97A57; }
+           35%{color:#28C298; }
+           30%{color:hotpink;}
+           25%{color:#667707;}
+           20%{color:#22B14C; }
+           15%{color:#B54513; }
+           10%{color:#f60;}
+		}
+
+		@keyframes sun {
+		   1%{background:#f09; }
+		   15%{background:#00A2E8; }
+           20%{background:#06c;}
+           25%{background:#A90F0F;}
+           30%{background: #A249A3;}
+           34%{background: #AD26E5;}
+           40%{background:green;}
+           45%{background:#F52797;}
+           50%{background:#880015; }
+           55%{background:#5E199E; }
+           60%{background:red;}
+           65%{background:#1FA3BF;}
+           70%{background:#B97A57; }
+           75%{background:#28C298; }
+           80%{background:hotpink;}
+           85%{background:#667707;}
+           90%{background:#22B14C; }
+           95%{background:#B54513; }
+           100%{background:#f60;}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<a href="首页/首页.html"><h2><a href="首页/首页.html" class="active">点 我 进 首 页</a></h2></a>
+	</div>
+</body>
+</html>
